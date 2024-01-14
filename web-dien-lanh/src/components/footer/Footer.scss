@@ -1,0 +1,108 @@
+@import "../../css/colo.scss";
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: auto;
+    background-color: $background-colo-footer-contact;
+    margin-top: 50px;
+
+    .footer-infor {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: $background-colo-footer-contact;
+        max-width: 1250px;
+        color: #5800FF;
+        color: black;
+        font-size: 17px;
+        padding: 20px 20px;
+        @media screen and (max-width: 1000px) {
+            gap: 80px;
+            font-size: 40px;
+            margin: 0 25px 0 25px;
+        }
+
+
+        .title {
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            @media screen and (max-width: 1000px) {
+                font-size: 40px;
+            }
+        }
+
+        .contact-infor-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .contact-row {
+                display: flex;
+                gap: 8px;
+                align-items: start;
+            }
+
+            .left-col {}
+
+            .right-col {}
+        }
+
+        .footer-row {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border-bottom: 1px solid #164863;
+            margin: 0 20px 0 0;
+            padding: 5px;
+            @media screen and (max-width: 1000px) {
+                margin: 0 20px 0 20px;
+            }
+
+            svg {
+                color: gray;
+                font-size: 15px;
+                @media screen and (max-width: 1000px) {
+                    gap: 60px;
+                    font-size: 30px;
+                }
+            }
+
+            a {
+                color: #164863;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(171, 77, 0);
+                }
+            }
+        }
+
+        .about-us-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .footer-reapaire-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-maintance-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .design-infor-container {
+        width: 100%;
+        background-color: $background-colo-footer-disign-infor;
+    }
+}

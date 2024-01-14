@@ -1,0 +1,62 @@
+.all-service-container {
+    .card-container {
+        width: 100%;
+
+        .card-body {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .card-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #0096FF;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .list-service {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 40px 0 40px;
+
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .repair-service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        h4 {
+            font-weight: 700;
+        }
+    }
+
+    .maintenance-service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .construction-service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+}

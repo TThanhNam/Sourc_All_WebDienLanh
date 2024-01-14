@@ -1,0 +1,12 @@
+.banner-container {
+    width: auto;
+    height: auto;
+    .mySwiper {
+        width: 100%;
+        overflow: hidden;
+        .banner-image {
+            width: 100%;
+        }
+    }
+}
+

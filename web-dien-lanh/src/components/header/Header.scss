@@ -1,0 +1,72 @@
+@import "../../css/colo.scss";
+
+.header-container {
+    display: flex;
+    background-color: $background-colo-header;
+    color: white;
+    justify-content: center;
+    height: 40px;
+    font-size: 14px;
+
+    .header-infor {
+        display: flex;
+        height: 100%;
+        max-width: 1250px;
+
+        .left-infor {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+
+            .time-infor {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .phone-infor {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right-infor {
+            display: flex;
+            justify-content: end;
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                align-items: center;
+                margin: 0;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+    }
+
+    .contact-infor {
+
+
+        .divider-vertical-with {
+            width: 1px;
+            background-color: white;
+        }
+    }
+}

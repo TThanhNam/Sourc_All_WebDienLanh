@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.divider-vertical-with {
+  background-color: #a575ff;
+  width: .1px;
+  height: 35%;
+}
