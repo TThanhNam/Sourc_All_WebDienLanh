@@ -74,6 +74,78 @@ const maintenanceItems = [
 const Nav = () => {
    const [currentActive, setCurrentActive] = React.useState(HOME_ACT);
 
+   const repairserviceItems = [
+      {
+         key: '1',
+         label: (
+            <Link to="#">
+               Bảo trì máy lạnh định kỳ
+            </Link>
+         ),
+      },
+      {
+         key: '2',
+         label: (
+            <Link to="#">
+               Vệ sinh máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '3',
+         label: (
+            <Link to="#">
+               Bơm ga máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '4',
+         label: (
+            <Link to="#">
+               Vệ sinh máy giặt
+            </Link>
+         ),
+      },
+   ]
+   const maintenanceItems = [
+      {
+         key: '1',
+         label: (
+            // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
+            <Link to="/RACM">      
+               Bảo trì máy lạnh định kỳ 
+            </Link>
+         ),
+      },
+      {
+         key: '2',
+         label: (
+            // ACC = air conditioner cleaning = vệ sinh máy lạnh
+            <Link to="/ACC">
+               Vệ sinh máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '3',
+         label: (
+            // ACGP = Air conditioner gas pump = bơm ga máy lạnh
+            <Link to="/ACGP">
+               Bơm ga máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '4',
+         label: (
+            // CWM = Cleaning the washing machine = vệ sinh máy giặt
+            <Link to="/CWM">
+               Vệ sinh máy giặt
+            </Link>
+         ),
+      },
+   ]
    return (
       <div className='nav-container'>
          <div className='main-content col-lg-12'>
@@ -108,11 +180,11 @@ const Nav = () => {
                   </li>
                   <li className={className({ 'active': currentActive === MAINTENANCE_ACT })}>
                      <Dropdown menu={{ items: maintenanceItems }} placement="bottomRight" arrow>
-                        <a href={"#"}
+                        <Link to={"/maintenance"}
                            onClick={() => setCurrentActive(MAINTENANCE_ACT)}>
                            Dịch Vụ Bảo Trì
                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
+                        </Link>
                      </Dropdown>
 
                   </li>
