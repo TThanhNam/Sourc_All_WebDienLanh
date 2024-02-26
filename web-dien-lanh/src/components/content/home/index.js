@@ -64,9 +64,8 @@ const Index = () => {
             </h2>
             <div className='list-service row'>
                {
-                  repairServiceCardItems.map((item) => {
-                     return <>
-                        <Link className='col-12 col-lg-3' to={'#'}>
+                  repairServiceCardItems.map((item, index) => {
+                     return <Link key={index} className='col-12 col-lg-3' to={'#'}>
                            <div className='card-container'>
                               <div className='card-body'>
                                  <img src={item.src} />
@@ -76,7 +75,6 @@ const Index = () => {
                               </div>
                            </div>
                         </Link>
-                     </>
                   })
                }
             </div>

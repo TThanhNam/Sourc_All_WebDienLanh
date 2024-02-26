@@ -1,0 +1,80 @@
+.air-conditioner-repairing-container {
+    width: 80%;
+    max-width: 1200px;
+
+    .title {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 50px 0 10px 0;
+        border-bottom: 1px solid #00000036;
+    }
+
+    .slogan-container {
+        display: flex;
+        text-align: center;
+        padding: 40px 0 0 0;
+        flex-direction: column;
+        gap: 15px;
+
+        .slogan-row-1 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .slogan-row-2 {
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .slogan-row-3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: red;
+        }
+    }
+
+    .air-conditioner-content-02 {
+
+        font-weight: 600;
+        @media screen and (max-width: 1000px) {
+            font-size: 40px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+
+                // font-size: 35px;
+                font-style: italic;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 35px;
+                    font-style: italic;
+                }
+            }
+        }
+
+    }
+
+    .air-conditioner-content-03 {
+        tr {
+            border: 1px solid black;
+
+            td {
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.text {
+    font-size: 15px;
+    color: black;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 35px;
+        color: black;
+    }
+}

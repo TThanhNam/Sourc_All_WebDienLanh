@@ -10,54 +10,70 @@ const MAINTENANCE_ACT = 4;
 const PRICE_LIST_ACT = 5;
 const CONTACT_ACT = 6;
 
+const repairserviceItems = [
+   {
+      key: '1',
+      label: (
+         <Link to="/air-condition-repairing">
+            Sửa chữa máy lạnh
+         </Link>
+      ),
+   },
+   {
+      key: '2',
+      label: (
+         <Link to="/refrigerator-machine-repair-service">
+            Sửa chữa tủ lạnh
+         </Link>
+      ),
+   },
+   {
+      key: '3',
+      label: (
+         <Link to="/washing-machine-repair-service">
+            Sửa chữa máy giặt
+         </Link>
+      ),
+   },
+]
 const maintenanceItems = [
    {
       key: '1',
       label: (
          <Link to="#">
-            1st menu item
+            Bảo trì máy lạnh định kỳ
+         </Link>
+      ),
+   },
+   {
+      key: '2',
+      label: (
+         <Link to="#">
+            Vệ sinh máy lạnh
+         </Link>
+      ),
+   },
+   {
+      key: '3',
+      label: (
+         <Link to="#">
+            Bơm ga máy lạnh
+         </Link>
+      ),
+   },
+   {
+      key: '4',
+      label: (
+         <Link to="#">
+            Vệ sinh máy giặt
          </Link>
       ),
    },
 ]
 
-
 const Nav = () => {
    const [currentActive, setCurrentActive] = React.useState(HOME_ACT);
-   const repairserviceItems = [
-      {
-         key: '1',
-         label: (
-            <Link to="#">
-               Bảo trì máy lạnh định kỳ
-            </Link>
-         ),
-      },
-      {
-         key: '2',
-         label: (
-            <Link to="#">
-               Vệ sinh máy lạnh
-            </Link>
-         ),
-      },
-      {
-         key: '3',
-         label: (
-            <Link to="#">
-               Bơm ga máy lạnh
-            </Link>
-         ),
-      },
-      {
-         key: '4',
-         label: (
-            <Link to="#">
-               Vệ sinh máy giặt
-            </Link>
-         ),
-      },
-   ]
+
    return (
       <div className='nav-container'>
          <div className='main-content col-lg-12'>
