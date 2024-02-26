@@ -30,7 +30,7 @@ const styles = {
 const ACC = () => {
    return (
       <div>
-         <div id='wrapper' style={{ margin: '50px' }}>
+         <div id='wrapper' style={{ margin: '50px' }} className='wrapper-content'>
             <div id='header'>
                <h3 style={styles.h3Style}>Dịch Vụ Vệ Sinh Máy Lạnh – Bảo Trì Định Kỳ Uy Tín Số 1 Tp.Hồ Chí Minh</h3>
                <h4 style={styles.h4Style}>NHANH CHÓNG – TIN CẬY – BẢO HÀNH DÀI LÂU</h4>

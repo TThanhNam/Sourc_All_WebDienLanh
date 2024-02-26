@@ -54,7 +54,7 @@ const constructionService = [
    },
 ]
 const Index = () => {
-   const [onLayer, setOnLayer] = React.useState(false);
+
    return (
       <div className='all-service-container'>
          <Banner />

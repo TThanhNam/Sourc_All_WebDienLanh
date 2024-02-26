@@ -26,7 +26,7 @@ const styles = {
 const CWM = () => {
    return (
       <div>
-         <div id='wrapper' style={{ margin: '50px' }}>
+         <div id='wrapper' style={{ margin: '50px' }} className='wrapper-content'>
             <div id='header'>
                <h3 style={styles.h3Style}>DỊCH VỤ VỆ SINH MÁY GIẶT HANARA CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</h3>
             </div>

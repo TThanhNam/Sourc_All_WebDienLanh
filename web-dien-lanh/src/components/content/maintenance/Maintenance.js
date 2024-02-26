@@ -12,7 +12,7 @@ const styles = {
 
 const Maintenance = () => {
    return (
-      <div>
+      <div className='wrapper-content'>
          <h4 style={styles.h4Style}>Dịch vụ bảo trì</h4>
          <div className="card-container">
             {postData.map(post => (

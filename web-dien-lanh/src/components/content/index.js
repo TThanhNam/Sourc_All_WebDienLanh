@@ -16,23 +16,22 @@ import CWM from './maintenance/CWM/CWM.js'
 const Index = () => {
   return (
     <div className='content-all-continer'>
-      <Routes>
-        <Route index path='/' element={<HomePage />} />
-        <Route path='/home-page' element={<HomePage />} />
-        <Route path='/introduction' element={<Intro />} />
-        <Route path='/repair-services' element={<RepairServices />} />
-        <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
-        <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
-        <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
-        <Route index path='/' element={<HomePage/>} />
-        <Route index path='/home-page' element={<HomePage/>} />
-        <Route index path='/introduction' element={<Intro/>} />
-        <Route index path='/maintenance' element={<Maintenance/>}/>
-        <Route index path='/RACM' element={<RACM/>}/>
-        <Route index path='/ACGP' element={<ACGP/>}/>
-        <Route index path='/CWM' element={<CWM/>}/>
-        <Route index path='/ACC' element={<ACC/>}/>.
-      </Routes>
+
+        <Routes>
+          <Route index path='/' element={<HomePage />} />
+          <Route path='/home-page' element={<HomePage />} />
+          <Route path='/introduction' element={<Intro />} />
+          <Route path='/repair-services' element={<RepairServices />} />
+          <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
+          <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
+          <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
+
+          <Route path='/maintenance' element={<Maintenance />} />
+          <Route path='/RACM' element={<RACM />} />
+          <Route path='/ACGP' element={<ACGP />} />
+          <Route path='/CWM' element={<CWM />} />
+          <Route path='/ACC' element={<ACC />} />
+        </Routes>
     </div>
   )
 }

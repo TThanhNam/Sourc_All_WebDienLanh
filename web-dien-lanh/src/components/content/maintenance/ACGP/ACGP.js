@@ -27,7 +27,7 @@ const styles = {
 const ACGP = () => {
    return (
       <div>
-         <div id="wrapper" style={{ margin: '50px' }}>
+         <div id="wrapper" style={{ margin: '50px' }} className='wrapper-content'>
             <div id="header">
                <h3 style={styles.h3Style}>Dịch Vụ Nạp Ga Máy Lạnh Uy Tín Số 1 Tp.Hồ Chí Minh</h3>
                <h4 style={styles.h4Style}>NHANH CHÓNG – CHÍNH XÁC – CHẤT LƯỢNG</h4>

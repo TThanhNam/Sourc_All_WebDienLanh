@@ -29,7 +29,7 @@ const styles = {
 const RACM = () => {
    return (
       <div>
-         <div id="wrapper" style={{ margin: '50px' }}>
+         <div id="wrapper" style={{ margin: '50px' }} className="wrapper-content">
             <div id="header">
                <h3 style={styles.h3Style}>Dịch vụ Bảo Trì Máy Lạnh Số 1 Tp.Hồ Chí Minh</h3>
                <h4 style={styles.h4Style}>NHANH CHÓNG – CHÍNH XÁC – CHẤT LƯỢNG</h4>
