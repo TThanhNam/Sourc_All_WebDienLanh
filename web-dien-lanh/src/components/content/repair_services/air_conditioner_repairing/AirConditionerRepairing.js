@@ -3,7 +3,7 @@ import './AirConditionerRepairing.scss'
 import bamer01 from '../../../../images/banner-sua-chua-02.jpg'
 const AirConditionerRepairing = () => {
    return (
-      <div className='air-conditioner-repairing-container col-lg-12'>
+      <div className='air-conditioner-repairing-container col-lg-12 wrapper-content'>
          <br />
          <br />
          <h4>
@@ -28,7 +28,7 @@ const AirConditionerRepairing = () => {
          </center>
          <div>
             <br />
-            <p className='text'>
+            <p className='content'>
                Với khí hậu miền Nam nói chung và thành phố Hồ Chí Minh nói riêng luôn trong tình trạng oi bức thì
                máy lạnh đã trở thành một thiết bị quen thuộc của đa số hộ gia đình. Tuy nhiên trong
                quá trình sử dụng sẽ không tránh khỏi việc thiết bị gặp sự cố, với người không có kinh nghiệm
@@ -38,10 +38,10 @@ const AirConditionerRepairing = () => {
             </p>
          </div>
          <div className='air-conditioner-content-02'>
-            <p>
+            <p className='title'>
                #Nên chọn dịch vụ điện lạnh HOPNHAT vì:
             </p>
-            <ul>
+            <ul className='list-content'>
                <li>Dịch vụ nhanh chóng và tiện lợi</li>
                <li>Phục vụ 24/24 ( hoạt động cả cuối tuần )</li>
                <li>Kỹ thuật viên có kiến thức, trình độ chuyên môn khắc phục tình trạng đơn giản đến phức tạp</li>
@@ -52,10 +52,10 @@ const AirConditionerRepairing = () => {
                <li>Là đơn vị sửa chữa tại nhà tận tâm, nhiệt tình với kim chỉ Nam là sự hài lòng của khách hàng</li>
             </ul>
             <br />
-            <p>
+            <p className='title'>
                #Những sự cố thường ở máy lạnh có thể tìm đến dịch vụ sửa chữ:
             </p>
-            <ul>
+            <ul className='list-content'>
                <li>Máy lạnh bị chảy nước</li>
                <li>Máy lạnh hoạt động phát ra âm thanh to</li>
                <li>Cục lạnh (dàn lạnh), Cục nòng (dàn nóng) phát ra tiếng ồn</li>
@@ -71,10 +71,10 @@ const AirConditionerRepairing = () => {
                <li>Máy lạnh không lạnh, kém lạnh</li>
             </ul>
             <br />
-            <p>
+            <p className='title'>
                #Ngoài ra một số nguyên nhân khác khiến máy lạnh bị hư như:
             </p>
-            <ul>
+            <ul className='list-content'>
                <li>Máy lạnh xì giàn</li>
                <li>Máy lạnh thiếu gas, mục đồng</li>
                <li>Máy nén không chạy, quạt chạy</li>
@@ -82,32 +82,32 @@ const AirConditionerRepairing = () => {
                <li>Áp suất hút thấp hoặc cao</li>
                <li>Máy lạnh xì gas</li>
             </ul>
-            <p>
+            <p className='title'>
                #Quy trình nhận và sửa máy lạnh tại nhà
             </p>
-            <ul style={{ listStyle: 'none' }}>
+            <ul className='list-content' style={{ listStyle: 'none' }}>
                <li>1. Tiếp nhận thông tin:</li>
-               <div className='text'>
-                  bạn có thể liên hệ với HN qua hotline hoặc zalo, sau đó kĩ thuật viên sẽ tư vấn sơ bộ và hẹn thời gian khảo sát tổng quan về thiết bị tại nhà
+               <div className='content' style={{marginLeft:'10px'}}>
+                  Bạn có thể liên hệ với HN qua hotline hoặc zalo, sau đó kĩ thuật viên sẽ tư vấn sơ bộ và hẹn thời gian khảo sát tổng quan về thiết bị tại nhà
                </div>
                <li>2. Kiểm tra sơ bộ và tư vấn</li>
-               <div className='text'>
+               <div className='content' style={{marginLeft:'10px'}}>
                   Sau khi lắng nghe các vấn đề về thiết bị từ khách hàng nhân viên sẽ tư vấn tổng thể
                </div>
                <li>3. Báo lỗi và chi phí</li>
-               <div className='text'>
+               <div className='content' style={{marginLeft:'10px'}}>
                   Nhân viên kỹ thuật sẽ kiểm tra máy sau đó dựa vào mức độ gặp sự cố báo chi phí dựa trên bảng giá
                </div>
                <li>4. Tiến hành sữa chữa</li>
-               <div className='text'>
+               <div className='content' style={{marginLeft:'10px'}}>
                   Tiến hành sữa chữa theo đúng yêu cầu kỹ thuật
                </div>
                <li>5. Kiểm tra lại, bàn giao và thanh toán</li>
-               <div className='text'>
+               <div className='content' style={{marginLeft:'10px'}}>
                   Khi hoàn tất việc sửa chữa kĩ thuật viên sẽ kiểm tra vận hành trước bàn giao sau đó sẽ viết hóa đơn thanh toán
                </div>
                <li>6. Bảo hành hậu mãi</li>
-               <div className='text'>
+               <div className='content' >
                   Đưa phiếu bảo hành có thời hạn 6-12 tháng cho khách hàng
                </div>
             </ul>

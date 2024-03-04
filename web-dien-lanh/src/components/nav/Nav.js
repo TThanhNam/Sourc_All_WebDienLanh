@@ -103,11 +103,11 @@ const Nav = () => {
                   </li>
                   <li className={className({ 'active': currentActive === REPAIRSERVICE_ACT })}>
                      <Dropdown menu={{ items: repairserviceItems }} placement="bottomRight" arrow>
-                        <a href={"#"}
+                        <Link to={"/repair-services"}
                            onClick={() => setCurrentActive(REPAIRSERVICE_ACT)}>
                            Dịch Vụ Sửa Chữa
                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
+                        </Link>
                      </Dropdown>
                   </li>
                   <li className={className({ 'active': currentActive === MAINTENANCE_ACT })}>
