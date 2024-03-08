@@ -10,8 +10,6 @@ import RefrigeratorRepairService from './repair_services/refrigerator_repair_ser
 
 import Maintenance from './maintenance/Maintenance.js'
 import RACM from './maintenance/RACM/RACM.js'
-import ACC from './maintenance/ACC/ACC.js'
-import ACGP from './maintenance/ACGP/ACGP.js'
 import CWM from './maintenance/CWM/CWM.js'
 const Index = () => {
   return (
@@ -25,12 +23,9 @@ const Index = () => {
           <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
           <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
           <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
-
           <Route path='/maintenance' element={<Maintenance />} />
           <Route path='/RACM' element={<RACM />} />
-          <Route path='/ACGP' element={<ACGP />} />
           <Route path='/CWM' element={<CWM />} />
-          <Route path='/ACC' element={<ACC />} />
         </Routes>
     </div>
   )
