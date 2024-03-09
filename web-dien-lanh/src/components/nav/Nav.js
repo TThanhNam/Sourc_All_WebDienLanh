@@ -42,9 +42,6 @@ const maintenanceItems = [
    {
       key: '1',
       label: (
-         // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
-         <Link to="/RACM">
-            Bảo trì máy lạnh định kỳ
         // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
          <Link to="/RACM">
             Bảo trì máy lạnh
@@ -52,30 +49,13 @@ const maintenanceItems = [
       ),
    },
    {
-      key: '2',
-      label: (
-         <Link to="/ACC">
-            Vệ sinh máy lạnh
-         </Link>
-      ),
-   },
-   {
-      key: '3',
-      label: (
-         <Link to="/ACGP">
-            Bơm ga máy lạnh
-         </Link>
-      ),
-   },
-   {
       key: '4',
       label: (
-         // CWM = Cleaning the washing machine = vệ sinh máy giặt
          // CWM = Cleaning the washing machine = Bảo trì máy giặt
          <Link to="/CWM">
             Bảo trì máy giặt
          </Link>
-      ),
+      ), 
    },
 ]
 
