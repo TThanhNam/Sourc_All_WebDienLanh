@@ -8,6 +8,8 @@
     height: 40px;
     font-size: 14px;
 
+    @media screen and (max-width:1000px) { display: none;}
+
     .header-infor {
         display: flex;
         height: 100%;
@@ -43,12 +45,14 @@
         .right-infor {
             display: flex;
             justify-content: end;
+
             ul {
                 display: flex;
                 list-style: none;
                 gap: 10px;
                 align-items: center;
                 margin: 0;
+
                 a {
                     color: white;
                     text-decoration: none;

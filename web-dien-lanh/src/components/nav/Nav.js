@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Nav.scss'
 import { Link } from 'react-router-dom'
 import className from 'classnames'
-import { Dropdown } from 'antd';
+import { Drawer, Dropdown, Menu } from 'antd';
+import { HomeOutlined, InfoCircleOutlined, ProfileOutlined, SettingOutlined, ToolOutlined } from '@ant-design/icons';
 const HOME_ACT = 1;
 const INTRODUCTION_ACT = 2;
 const REPAIRSERVICE_ACT = 3;
@@ -42,15 +43,14 @@ const maintenanceItems = [
       key: '1',
       label: (
          // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
-         <Link to="/RACM">      
-            Bảo trì máy lạnh định kỳ 
+         <Link to="/RACM">
+            Bảo trì máy lạnh định kỳ
          </Link>
       ),
    },
    {
       key: '2',
       label: (
-         // ACC = air conditioner cleaning = vệ sinh máy lạnh
          <Link to="/ACC">
             Vệ sinh máy lạnh
          </Link>
@@ -59,7 +59,6 @@ const maintenanceItems = [
    {
       key: '3',
       label: (
-         // ACGP = Air conditioner gas pump = bơm ga máy lạnh
          <Link to="/ACGP">
             Bơm ga máy lạnh
          </Link>
@@ -75,12 +74,76 @@ const maintenanceItems = [
       ),
    },
 ]
+
+const menuItem = [
+   {
+      key: HOME_ACT,
+      icon: <HomeOutlined style={{ fontSize: '30px' }} />,
+      label: "Trang Chủ",
+   },
+   {
+      icon: <InfoCircleOutlined style={{ fontSize: '30px' }} />,
+      key: INTRODUCTION_ACT,
+      label: "Giới Thiệu",
+   },
+   {
+      icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+      key: REPAIRSERVICE_ACT,
+      label: "Dịch Vụ Sửa Chữa",
+      children: [
+         {
+            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+            key: "sfdg",
+            label: "Sửa Chữa Máy Lạnh",
+         },
+         {
+            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+            key: "ádf",
+            label: "Sửa Chữa Máy Giặt",
+         },
+         {
+            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+            key: "đà",
+            label: "Sửa Chữa Tủ Lạnh",
+         },
+      ]
+   },
+   {
+      icon: <SettingOutlined style={{ fontSize: '30px' }} />,
+      key: MAINTENANCE_ACT,
+      label: "Dịch Vụ Bảo trì",
+      type:'vertical',
+      children: [
+         {
+            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+            key: "ádf",
+            label: "Bảo Trì Máy Lạnh",
+         },
+         {
+            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+            key: "ádfa",
+            label: "Bảo Trì Máy Giặt",
+         },
+      ]
+   },
+   {
+      icon: <HomeOutlined style={{ fontSize: '30px' }} />,
+      key: PRICE_LIST_ACT,
+      label: "Bảng Giá",
+   },
+   {
+      icon: <ProfileOutlined style={{ fontSize: '30px' }} />,
+      key: CONTACT_ACT,
+      label: "Liên Hệ",
+   },
+]
 const Nav = () => {
    const [currentActive, setCurrentActive] = React.useState(HOME_ACT);
+   const [openDrawer, setOpenDrawer] = useState(false);
 
    return (
       <div className='nav-container'>
-         <div className='main-content col-lg-12'>
+         <div className='main-content-lg col-lg-12'>
             <div className='logo col-lg-4 active'>
                <h1>
                   LOGO HERE
@@ -106,7 +169,7 @@ const Nav = () => {
                         <Link to={"/repair-services"}
                            onClick={() => setCurrentActive(REPAIRSERVICE_ACT)}>
                            Dịch Vụ Sửa Chữa
-                           <i class="fa-solid fa-caret-down"></i>
+                           <i className="fa-solid fa-caret-down"></i>
                         </Link>
                      </Dropdown>
                   </li>
@@ -115,7 +178,7 @@ const Nav = () => {
                         <Link to={"/maintenance"}
                            onClick={() => setCurrentActive(MAINTENANCE_ACT)}>
                            Dịch Vụ Bảo Trì
-                           <i class="fa-solid fa-caret-down"></i>
+                           <i className="fa-solid fa-caret-down"></i>
                         </Link>
                      </Dropdown>
 
@@ -135,6 +198,40 @@ const Nav = () => {
                </ul>
             </div>
          </div>
+         <div className='main-content-md col-12'>
+            <div className='logo col-lg-4 active'>
+               LOGO HERE
+            </div>
+            <div className='nav-content col-lg-8'>
+               <div className='icon-open-drawer' onClick={() => setOpenDrawer(true)}>
+                  <i class="fa-solid fa-bars"></i>
+               </div>
+               <Drawer
+                  placement={'left'}
+                  onClose={() => setOpenDrawer(!openDrawer)}
+                  open={openDrawer}
+                  width={'500px'}
+                  closeIcon={null}
+               >
+                  <Menu
+                     style={{
+                        width: '100%',
+                        fontSize: '33px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '20px'
+                     }}
+                     mode="inline"
+                     // defaultSelectedKeys={currentActive}
+                     // defaultOpenKeys={currentActive}
+                     
+                     items={menuItem}
+                  />
+               </Drawer>
+            </div>
+         </div>
+
+
       </div>
    )
 }

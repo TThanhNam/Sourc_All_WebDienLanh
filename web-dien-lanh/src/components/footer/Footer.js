@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <div className='footer-phone contact-row'>
             <div className='left-col'>
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
             <div className='right-col'>
               Hotline: 0355034827
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <div className='footer-email contact-row'>
             <div className='left-col'>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
             </div>
             <div className='right-col'>
               Email: abc@123.com
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
           <div className='footer-website contact-row'>
             <div className='left-col'>
-              <i class="fa-solid fa-earth-americas"></i>
+              <i className="fa-solid fa-earth-americas"></i>
             </div>
             <div className='right-col'>
               Website: www.hdl.com
@@ -107,7 +107,7 @@ const Footer = () => {
             aboutUsItems.map((item) => {
               return <>
                 <div className='footer-row'>
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                   <Link to={item.href}>
                     {item.lable}
                   </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
             aboutUsItems.map((item) => {
               return <>
                 <div className='footer-row'>
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                   <Link to={item.href}>
                     {item.lable}
                   </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
             aboutUsItems.map((item) => {
               return <>
                 <div className='footer-row'>
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                   <Link to={item.href}>
                     {item.lable}
                   </Link>
