@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 .divider-vertical-with {
   background-color: #a575ff;
   width: .1px;
@@ -9,14 +10,27 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
+
+  @media screen and (max-width:1000px) {
+    font-size: 50px;
+  }
 }
 
 .content {
   font-size: 16px;
+  @media screen and (max-width:1000px) {
+    font-size: 40px;
+    padding: 0 50px 0 50px;
+  }
 }
 
 .list-content {
   font-size: 16px;
+
+  @media screen and (max-width:1000px) {
+    font-size: 40px;
+    padding: 0 50px 0 50px;
+  }
 }

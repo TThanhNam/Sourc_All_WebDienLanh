@@ -58,33 +58,38 @@ const Index = () => {
    return (
       <div className='all-service-container'>
          <Banner />
-         <div className='content'>
+         <div className='main-content'>
             <br />
             <div className='middle-content why-choose-us'>
-               <div className='row-1'>
-                  Dịch vụ điện lạnh & máy giặt
-               </div>
-               <div className='row-2'>
-                  TẠI SAO <span style={{ color: '#427D9D' }}>NÊN CHỌN CHÚNG TÔI</span>
-               </div>
-               <div className='row-3' style={{ marginTop: '10px' }}>
-                  Với chúng tôi
-               </div>
-               <div className='row-3'>
-                  Uy tín tạo nên thương hiệu.
-               </div>
+               <center>
+                  <div className='row-1'>
+                     Dịch vụ điện lạnh & máy giặt
+                  </div>
+                  <div className='row-2'>
+                     TẠI SAO <span style={{ color: '#427D9D' }}>NÊN CHỌN CHÚNG TÔI</span>
+                  </div>
+                  <div className='row-3' style={{ marginTop: '10px' }}>
+                     Với chúng tôi
+                  </div>
+                  <div className='row-3'>
+                     Uy tín tạo nên thương hiệu.
+                  </div>
+               </center>
             </div>
             <div className='list-card-introduction col-12'>
                <div className="card-container col-12 col-lg-4">
                   <div className="card">
                      <Link to="">
                         <div className="card--display">
-                           <i className="fa-solid fa-headset fa-2xl"></i>
-                           <h2>DỊCH VỤ</h2>
+                           <div className='title'>
+                              <i className="fa-solid fa-headset fa-2xl" style={{ marginBottom: '10px' }} F></i>
+                              <br />
+                              DỊCH VỤ
+                           </div>
                         </div>
-                        <div className="card--hover">
-                           <h2>Nhanh chóng, mọi nơi mọi lúc</h2>
-                           <p>HOPNHAT cam kết phục vụ khách hàng 24/7 dù năng hay mưa dù sáng hay tối, chỉ cần bạn gọi chúng tôi lập tức có mặt.</p>
+                        <div className="card--hover content">
+                           <div>Nhanh chóng, mọi nơi mọi lúc</div>
+                           <p>Phục vụ 24/7, chỉ cần bạn gọi chúng tôi luôn sẵn sàng.</p>
                         </div>
                      </Link>
                      <div className="card--border"></div>
@@ -94,11 +99,14 @@ const Index = () => {
                   <div className="card">
                      <Link to="">
                         <div className="card--display">
-                           <i className="fa-regular fa-thumbs-up fa-2xl"></i>
-                           <h2>THÁI ĐỘ</h2>
+                           <div className='title'>
+                              <i className="fa-regular fa-thumbs-up fa-2xl" style={{ marginBottom: '10px' }}></i>
+                              <br />
+                              THÁI ĐỘ
+                           </div>
                         </div>
-                        <div className="card--hover">
-                           <h2>Ân cần, chuyên nghiệp</h2>
+                        <div className="card--hover content">
+                           <div>Ân cần, chuyên nghiệp</div>
                            <p>
                               Vấn đề của khách hàng là vấn đề của chúng tôi
                            </p>
@@ -111,11 +119,14 @@ const Index = () => {
                   <div className="card">
                      <Link to="">
                         <div className="card--display">
-                           <i className="fa-solid fa-medal fa-2xl"></i>
-                           <h2>CHẤT LƯỢNG</h2>
+                           <div className='title'>
+                              <i className="fa-solid fa-medal fa-2xl" style={{ marginBottom: '10px' }}></i>
+                              <br />
+                              CHẤT LƯỢNG
+                           </div>
                         </div>
-                        <div className="card--hover">
-                           <h2>Số 1 Tp.HCM</h2>
+                        <div className="card--hover content">
+                           <div>Số 1 Tp.HCM</div>
                            <p>Chất lượng sản phẩm luôn được đặt lên hàng đầu</p>
                         </div>
                      </Link>
@@ -124,28 +135,34 @@ const Index = () => {
                </div>
             </div>
             <div className='middle-content why-choose-us'>
-               <div className='row-1'>
-                  Dịch vụ điện lạnh & máy giặt
-               </div>
-               <div className='row-2'>
-                  <span style={{ color: '#427D9D' }}>DỊCH VỤ</span> CỦA CHÚNG TÔI
-               </div>
-               <div className='row-3' style={{ marginTop: '10px' }}>
-                  Phục vụ tận tâm
-               </div>
-               <div className='row-3'>
-                  Luôn đặt chất lượng lên hàng đầu.
-               </div>
+               <center>
+                  <div className='row-1'>
+                     Dịch vụ điện lạnh & máy giặt
+                  </div>
+                  <div className='row-2'>
+                     <span style={{ color: '#427D9D' }}>DỊCH VỤ</span> CỦA CHÚNG TÔI
+                  </div>
+                  <div className='row-3' style={{ marginTop: '10px' }}>
+                     Phục vụ tận tâm
+                  </div>
+                  <div className='row-3'>
+                     Luôn đặt chất lượng lên hàng đầu.
+                  </div>
+               </center>
             </div>
 
             <div className='repair-service-container'>
-               <h2 className=''>
+               <div className='title' style={{ fontWeight: '700', marginBottom: '10px' }}>
                   DỊCH VỤ SỬA CHỮA
-               </h2>
+               </div>
                <div className='list-service row'>
                   {
                      repairServiceCardItems.map((item, index) => {
-                        return <Link key={index} className='col-12 col-lg-4 tile' to={'#'}>
+                        return <Link
+                           style={{ marginBottom: '25px' }}
+                           key={index}
+                           className='col-12 col-lg-4 tile'
+                           to={'#'}>
                            <img src={item.src} />
                            <div className="details">
                               <span className="title">{item.title}</span>
@@ -157,15 +174,16 @@ const Index = () => {
                </div>
             </div>
             <div className='maintenance-service-container'>
-               <h2 className=''>
+               <div className='title' style={{ fontWeight: '700', marginBottom: '10px' }}>
                   DỊCH VỤ BẢO TRÌ
-               </h2>
+               </div>
                <div className='list-service row'>
                   {
                      constructionService.map((item) => {
                         return <>
                            <Link
                               className='col-12 col-lg-4 tile'
+                              style={{ marginBottom: '30px' }}
                               to={'#'}>
                               <img src={item.src} />
                               <div className="details">
