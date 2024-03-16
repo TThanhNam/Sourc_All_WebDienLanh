@@ -11,6 +11,10 @@ import maintenance01 from '../../../images/sua-may-lanh.jpg'
 import maintenance02 from '../../../images/may-giat-02.jpg'
 import maintenance03 from '../../../images/tu-lanh.jpg'
 
+import member01 from '../../../images/1CyU6aoVjqOa4oCE2SCAm.jpg'
+import member02 from '../../../images/gdD2ZG1cxU2I0MI8qWwgk.jpg'
+import member03 from '../../../images/q9YYPtMkQCaSOkWuCSa0o4.jpg'
+
 const { Meta } = Card;
 
 const repairServiceCardItems = [
@@ -59,8 +63,7 @@ const Index = () => {
       <div className='all-service-container'>
          <Banner />
          <div className='main-content'>
-            <br />
-            <div className='middle-content why-choose-us'>
+            <div className='middle-content why-choose-us' style={{ margin: '70px 0px' }}>
                <center>
                   <div className='row-1'>
                      Dịch vụ điện lạnh & máy giặt
@@ -134,7 +137,7 @@ const Index = () => {
                   </div>
                </div>
             </div>
-            <div className='middle-content why-choose-us'>
+            <div className='middle-content why-choose-us' style={{ margin: '70px 0px' }}>
                <center>
                   <div className='row-1'>
                      Dịch vụ điện lạnh & máy giặt
@@ -194,6 +197,145 @@ const Index = () => {
                         </>
                      })
                   }
+               </div>
+            </div>
+         </div>
+         <div className='achievement col-12' style={{ backgroundColor: 'rgb(79 176 229)' }}>
+            <div className='main-content achievement-content col-lg-12'>
+               <div className='col-12 col-lg-4 achievement-content-wrapper'>
+                  <div className='achievement-content-icon col-4 col-lg-6'>
+                     <i class="fa-solid fa-fan"></i>
+                  </div>
+                  <div className='achievement-content-detail col-8 col-lg-6'>
+                     <div className='achievement-content-row-1'>
+                        1000 +
+                     </div>
+                     <div className='achievement-content-row-2'>
+                        Dự án thành công
+                     </div>
+                  </div>
+               </div>
+               <div className='col-12 col-lg-4 achievement-content-wrapper'>
+                  <div className='achievement-content-icon col-4 col-lg-6'>
+                     <i class="fa-regular fa-face-smile-beam"></i>
+                  </div>
+                  <div className='achievement-content-detail col-8 col-lg-6'>
+                     <div className='achievement-content-row-1'>
+                        1000 +
+                     </div>
+                     <div className='achievement-content-row-2'>
+                        Khách hàng được phục vụ
+                     </div>
+                  </div>
+               </div>
+               <div className='col-12 col-lg-4 achievement-content-wrapper'>
+                  <div className='achievement-content-icon col-4 col-lg-6'>
+                     <i class="fa-regular fa-hourglass-half"></i>
+                  </div>
+                  <div className='achievement-content-detail col-8 col-lg-6'>
+                     <div className='achievement-content-row-1'>
+                        10 +
+                     </div>
+                     <div className='achievement-content-row-2'>
+                        Năm Kinh Nghiêm
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div className='main-content'>
+            <div className='our-team col-12'>
+               <div className='middle-content why-choose-us row-all-team-infor col-12 col-lg-3' style={{ margin: '70px 0px' }}>
+                  <center>
+                     <div className='row-1'>
+                        Đội ngũ chuyên nghiệp
+                     </div>
+                     <div className='row-2'>
+                        <span style={{ color: '#427D9D' }}>NHÂN VIÊN</span> CỦA CHÚNG TÔI
+                     </div>
+                     <div className='row-3' style={{ marginTop: '10px' }}>
+                        Phục vụ tận tâm
+                     </div>
+                     <div className='row-3'>
+                        Cam đoan cung cấp dịch vụ chất lượng đáng tin cậy.
+                     </div>
+                  </center>
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={member01} />
+                  <div className="placehoder">
+                     <div className='title'>
+                        Đặng Văn Hợp
+                     </div>
+                     <div className='content'>
+                        Trưởng phòng HOPNHAT
+                     </div>
+                     <div className='icon-contact'>
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                           <li>
+                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={member02} />
+                  <div className="placehoder">
+                     <div className='title'>
+                        Đặng Văn C
+                     </div>
+                     <div className='content'>
+                        Phó phòng HOPNHAT
+                     </div>
+                     <div className='icon-contact'>
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                           <li>
+                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={member03} />
+                  <div className="placehoder">
+                     <div className='title'>
+                        Đặng Văn B
+                     </div>
+                     <div className='content'>
+                        Nhân viên HOPNHAT
+                     </div>
+                     <div className='icon-contact'>
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                           <li>
+                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
