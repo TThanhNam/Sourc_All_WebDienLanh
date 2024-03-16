@@ -9,8 +9,8 @@ import WashingMachineRepairService from './repair_services/washing_machine_repai
 import RefrigeratorRepairService from './repair_services/refrigerator_repair_service/RefrigeratorRepairService.js'
 
 import Maintenance from './maintenance/Maintenance.js'
-import RACM from './maintenance/RACM/RACM.js'
-import CWM from './maintenance/CWM/CWM.js'
+import RACM from './maintenance/regular-air-conditioning-maintenance/RACM.js'
+import CWM from './maintenance/cleaning_the_washing_machine/CWM.js'
 const Index = () => {
   return (
     <div className='content-all-continer'>
@@ -24,8 +24,8 @@ const Index = () => {
           <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
           <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
           <Route path='/maintenance' element={<Maintenance />} />
-          <Route path='/RACM' element={<RACM />} />
-          <Route path='/CWM' element={<CWM />} />
+          <Route path='/regular-air-conditioning-maintenance' element={<RACM />} />
+          <Route path='/cleaning-the-washing-machine' element={<CWM />} />
         </Routes>
     </div>
   )
