@@ -1,129 +1,147 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Nav.scss'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import className from 'classnames'
 import { Drawer, Dropdown, Menu } from 'antd';
 import { HomeOutlined, InfoCircleOutlined, ProfileOutlined, SettingOutlined, ToolOutlined } from '@ant-design/icons';
-const HOME_ACT = 1;
-const INTRODUCTION_ACT = 2;
-const REPAIRSERVICE_ACT = 3;
-const MAINTENANCE_ACT = 4;
-const PRICE_LIST_ACT = 5;
-const CONTACT_ACT = 6;
+const HOME_ACT = 'home-page';
+const INTRODUCTION_ACT = 'introduction';
+const REPAIRSERVICE_ACT = 'repair-services';
+const REPAIRSERVICE_ACT_1 = 'air-condition-repairing'
+const REPAIRSERVICE_ACT_2 = 'washing-machine-repair-service'
+const REPAIRSERVICE_ACT_3 = 'refrigerator-machine-repair-service'
+const MAINTENANCE_ACT = 'maintenance';
+const MAINTENANCE_ACT_1 = 'regular-air-conditioning-maintenance';
+const MAINTENANCE_ACT_2 = 'cleaning-the-washing-machine';
+const CONTACT_ACT = 'contact-us';
 
-const repairserviceItems = [
-   {
-      key: '1',
-      label: (
-         <Link to="/air-condition-repairing">
-            Sửa chữa máy lạnh
-         </Link>
-      ),
-   },
-   {
-      key: '2',
-      label: (
-         <Link to="/refrigerator-machine-repair-service">
-            Sửa chữa tủ lạnh
-         </Link>
-      ),
-   },
-   {
-      key: '3',
-      label: (
-         <Link to="/washing-machine-repair-service">
-            Sửa chữa máy giặt
-         </Link>
-      ),
-   },
-]
-
-const maintenanceItems = [
-   {
-      key: '1',
-      label: (
-        // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
-         <Link to="/regular-air-conditioning-maintenance">
-            Bảo trì máy lạnh
-         </Link>
-      ),
-   },
-   {
-      key: '4',
-      label: (
-         // CWM = Cleaning the washing machine = Bảo trì máy giặt
-         <Link to="/cleaning-the-washing-machine">
-            Bảo trì máy giặt
-         </Link>
-      ), 
-   },
-]
-
-const menuItem = [
-   {
-      key: HOME_ACT,
-      icon: <HomeOutlined style={{ fontSize: '30px' }} />,
-      label: "Trang Chủ",
-   },
-   {
-      icon: <InfoCircleOutlined style={{ fontSize: '30px' }} />,
-      key: INTRODUCTION_ACT,
-      label: "Giới Thiệu",
-   },
-   {
-      icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-      key: REPAIRSERVICE_ACT,
-      label: "Dịch Vụ Sửa Chữa",
-      children: [
-         {
-            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-            key: "sfdg",
-            label: "Sửa Chữa Máy Lạnh",
-         },
-         {
-            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-            key: "ádf",
-            label: "Sửa Chữa Máy Giặt",
-         },
-         {
-            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-            key: "đà",
-            label: "Sửa Chữa Tủ Lạnh",
-         },
-      ]
-   },
-   {
-      icon: <SettingOutlined style={{ fontSize: '30px' }} />,
-      key: MAINTENANCE_ACT,
-      label: "Dịch Vụ Bảo trì",
-      type:'vertical',
-      children: [
-         {
-            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-            key: "ádf",
-            label: "Bảo Trì Máy Lạnh",
-         },
-         {
-            // icon: <ToolOutlined style={{ fontSize: '30px' }} />,
-            key: "ádfa",
-            label: "Bảo Trì Máy Giặt",
-         },
-      ]
-   },
-   {
-      icon: <HomeOutlined style={{ fontSize: '30px' }} />,
-      key: PRICE_LIST_ACT,
-      label: "Bảng Giá",
-   },
-   {
-      icon: <ProfileOutlined style={{ fontSize: '30px' }} />,
-      key: CONTACT_ACT,
-      label: "Liên Hệ",
-   },
-]
 const Nav = () => {
-   const [currentActive, setCurrentActive] = React.useState(HOME_ACT);
    const [openDrawer, setOpenDrawer] = useState(false);
+   const location = useLocation();
+   const maintenanceItems = [
+
+      {
+         key: '1',
+         label: (
+            // RACM = Regular Air Conditioning Maintenance = Bảo trì máy lạnh định kỳ
+            <Link to="/regular-air-conditioning-maintenance" style={{ textDecoration: 'none' }}>
+               Bảo trì máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '4',
+         label: (
+            // CWM = Cleaning the washing machine = Bảo trì máy giặt
+            <Link to="/cleaning-the-washing-machine" style={{ textDecoration: 'none' }}>
+               Bảo trì máy giặt
+            </Link>
+         ),
+      },
+   ]
+   const repairserviceItems = [
+      {
+         key: '1',
+         label: (
+            <Link to="/air-condition-repairing" style={{ textDecoration: 'none' }}>
+               Sửa chữa máy lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '2',
+         label: (
+            <Link to="/refrigerator-machine-repair-service" style={{ textDecoration: 'none' }}>
+               Sửa chữa tủ lạnh
+            </Link>
+         ),
+      },
+      {
+         key: '3',
+         label: (
+            <Link to="/washing-machine-repair-service" style={{ textDecoration: 'none' }}>
+               Sửa chữa máy giặt
+            </Link>
+         ),
+      },
+   ]
+   const menuItem = [
+      {
+         key: HOME_ACT,
+         icon: <HomeOutlined style={{ fontSize: '30px' }} />,
+         label: <Link to={"/home-page"}
+
+         >Trang Chủ </Link>,
+      },
+      {
+         icon: <InfoCircleOutlined style={{ fontSize: '30px' }} />,
+         key: INTRODUCTION_ACT,
+         label: <Link to={"/introduction"}
+         >
+            Giới Thiệu
+         </Link>,
+      },
+      {
+         icon: <ToolOutlined style={{ fontSize: '30px' }} />,
+         key: REPAIRSERVICE_ACT,
+         label: <Link to={"/repair-services"}
+         >
+            Dịch Vụ Sửa Chữa
+         </Link>,
+         children: [
+            {
+               key: REPAIRSERVICE_ACT_1,
+               label: <Link to="/air-condition-repairing" style={{ textDecoration: 'none' }}>
+                  Sửa chữa máy lạnh
+               </Link>,
+            },
+            {
+               key: REPAIRSERVICE_ACT_2,
+               label: <Link to="/washing-machine-repair-service" style={{ textDecoration: 'none' }}>
+                  Sửa chữa máy giặt
+               </Link>,
+            },
+            {
+               key: REPAIRSERVICE_ACT_3,
+               label: <Link to="/refrigerator-machine-repair-service" style={{ textDecoration: 'none' }}>
+                  Sửa chữa tủ lạnh
+               </Link>,
+            },
+         ]
+      },
+      {
+         icon: <SettingOutlined style={{ fontSize: '30px' }} />,
+         key: MAINTENANCE_ACT,
+         label: <Link to={"/maintenance"}
+
+         >
+            Dịch Vụ Bảo Trì
+         </Link>,
+         type: 'vertical',
+         children: [
+            {
+               key: MAINTENANCE_ACT_1,
+               label: <Link to="/regular-air-conditioning-maintenance" style={{ textDecoration: 'none' }}>
+                  Bảo trì máy lạnh
+               </Link>,
+            },
+            {
+               key: MAINTENANCE_ACT_2,
+               label: <Link to="/cleaning-the-washing-machine" style={{ textDecoration: 'none' }}>
+                  Bảo trì máy giặt
+               </Link>,
+            },
+         ]
+      },
+      {
+         icon: <ProfileOutlined style={{ fontSize: '30px' }} />,
+         key: CONTACT_ACT,
+         label: <Link to={"/contact-us"}
+         >
+            Liên hệ
+         </Link>,
+      }
+   ]
 
    return (
       <div className='nav-container'>
@@ -135,49 +153,51 @@ const Nav = () => {
             </div>
             <div className='nav-content col-lg-8'>
                <ul>
-                  <li className={className({ 'active': currentActive === HOME_ACT })}>
+                  <li className={className({ 'active': location.pathname.substring(1) === HOME_ACT })}>
                      <Link to={"/home-page"}
-                        onClick={() => setCurrentActive(HOME_ACT)}
+
                      >
                         Trang Chủ
                      </Link>
                   </li>
-                  <li className={className({ 'active': currentActive === INTRODUCTION_ACT })}>
-                     <Link to={"/introduction"}
-                        onClick={() => setCurrentActive(INTRODUCTION_ACT)}>
+                  <li className={className({ 'active': location.pathname.substring(1) === INTRODUCTION_ACT })}>
+                     <Link to={"/introduction"}>
                         Giới Thiệu
                      </Link>
                   </li>
-                  <li className={className({ 'active': currentActive === REPAIRSERVICE_ACT })}>
+                  <li
+                     className={className({
+                        'active': location.pathname.substring(1) === REPAIRSERVICE_ACT ||
+                           location.pathname.substring(1) === REPAIRSERVICE_ACT_1 ||
+                           location.pathname.substring(1) === REPAIRSERVICE_ACT_2 ||
+                           location.pathname.substring(1) === REPAIRSERVICE_ACT_3
+                     })}>
                      <Dropdown menu={{ items: repairserviceItems }} placement="bottomRight" arrow>
                         <Link to={"/repair-services"}
-                           onClick={() => setCurrentActive(REPAIRSERVICE_ACT)}>
+                        >
                            Dịch Vụ Sửa Chữa
                            <i className="fa-solid fa-caret-down"></i>
                         </Link>
                      </Dropdown>
                   </li>
-                  <li className={className({ 'active': currentActive === MAINTENANCE_ACT })}>
+                  <li
+                     className={className({
+                        'active': location.pathname.substring(1) == MAINTENANCE_ACT ||
+                           location.pathname.substring(1) == MAINTENANCE_ACT_1 ||
+                           location.pathname.substring(1) == MAINTENANCE_ACT_2
+                     })}>
                      <Dropdown menu={{ items: maintenanceItems }} placement="bottomRight" arrow>
                         <Link to={"/maintenance"}
-                           onClick={() => setCurrentActive(MAINTENANCE_ACT)}>
+                        >
                            Dịch Vụ Bảo Trì
                            <i className="fa-solid fa-caret-down"></i>
                         </Link>
                      </Dropdown>
-
                   </li>
-                  <li className={className({ 'active': currentActive === PRICE_LIST_ACT })}>
-                     <a href={"#"}
-                        onClick={() => setCurrentActive(PRICE_LIST_ACT)}>
-                        Bảng giá
-                     </a>
-                  </li>
-                  <li className={className({ 'active': currentActive === CONTACT_ACT })}>
-                     <a href={"#"}
-                        onClick={() => setCurrentActive(CONTACT_ACT)}>
+                  <li className={className({ 'active': location.pathname.substring(1) === CONTACT_ACT })}>
+                     <Link to={"/contact-us"}>
                         Liên hệ
-                     </a>
+                     </Link>
                   </li>
                </ul>
             </div>
@@ -188,7 +208,7 @@ const Nav = () => {
             </div>
             <div className='nav-content col-lg-8'>
                <div className='icon-open-drawer' onClick={() => setOpenDrawer(true)}>
-                  <i class="fa-solid fa-bars"></i>
+                  <i className="fa-solid fa-bars"></i>
                </div>
                <Drawer
                   placement={'left'}
@@ -206,9 +226,9 @@ const Nav = () => {
                         gap: '20px'
                      }}
                      mode="inline"
-                     // defaultSelectedKeys={currentActive}
-                     // defaultOpenKeys={currentActive}
-                     
+                     defaultSelectedKeys={HOME_ACT}
+                     selectedKeys={location.pathname.substring(1)}
+                     onClick={() => setOpenDrawer(false)}
                      items={menuItem}
                   />
                </Drawer>

@@ -6,16 +6,16 @@ const CWM = () => {
       <div className='cleaning-the-washing-machine-container col-lg-12 wrapper-content'>
          <br />
          <br />
-         <h4>DỊCH VỤ VỆ SINH MÁY GIẶT HOPNHAT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</h4>
-         <h5>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</h5>
+         <div className='title'>DỊCH VỤ VỆ SINH MÁY GIẶT HOPNHAT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</div>
+         <div className='content' style={{ padding: '0' }}>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</div >
          <hr />
          <center>
-            <h2>
+            <div className='title'>
                Niềm tin của bạn
-            </h2>
-            <h2>
+            </div>
+            <div className='title'>
                Trách nhiệm của chúng tôi
-            </h2>
+            </div>
             <br />
 
             <div>
@@ -46,7 +46,7 @@ const CWM = () => {
                <h3><b>Bảng giá vệ sinh máy giặt tại nhà</b></h3>
                <b>Giá vệ sinh máy giặt cửa trên:</b>
             </p>
-            <table className='your-table-class'>
+            <table className='your-table-class table'>
                <tr>
                   <th>Số KG</th>
                   <th>Đơn Giá</th>
@@ -70,7 +70,7 @@ const CWM = () => {
             </table>
             <p>&nbsp;</p>
             <p className='title'><b>Giá vệ sinh máy giặt cửa trước:</b></p>
-            <table className='your-table-class'>
+            <table className='your-table-class  table'>
                <tr>
                   <th>LOẠI MÁY</th>
                   <th>ĐƠN GIÁ</th>
@@ -98,7 +98,7 @@ const CWM = () => {
             </table>
             <div>&nbsp;</div>
             <p className='title'><b>Giá vệ sinh máy sấy:</b></p>
-            <table className='your-table-class'>
+            <table className='your-table-class  table'>
                <tr>
                   <th>LOẠI MÁY</th>
                   <th>ĐƠN GIÁ</th>
@@ -145,7 +145,7 @@ const CWM = () => {
                <li>Zalo: 0365443972 (kỹ thuật trưởng)</li>
                <li>Email: info@hopnhat.com</li>
                <li>Thứ 2 – chủ nhật: 6h-22h</li>
-               <li>Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></li>  
+               <li>Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></li>
             </ul>
          </div>
       </div>

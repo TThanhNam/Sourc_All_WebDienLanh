@@ -104,15 +104,13 @@ const Footer = () => {
             THÔNG TIN
           </div>
           {
-            aboutUsItems.map((item) => {
-              return <>
-                <div className='footer-row'>
-                  <i className="fa-solid fa-arrow-right"></i>
-                  <Link to={item.href}>
-                    {item.lable}
-                  </Link>
-                </div>
-              </>
+            aboutUsItems.map((item, index) => {
+              return <div key={index} className='footer-row'>
+                <i className="fa-solid fa-arrow-right"></i>
+                <Link to={item.href}>
+                  {item.lable}
+                </Link>
+              </div>
             })
           }
         </div>
@@ -121,15 +119,13 @@ const Footer = () => {
             DỊCH VỤ SỬA CHỮA
           </div>
           {
-            aboutUsItems.map((item) => {
-              return <>
-                <div className='footer-row'>
-                  <i className="fa-solid fa-arrow-right"></i>
-                  <Link to={item.href}>
-                    {item.lable}
-                  </Link>
-                </div>
-              </>
+            aboutUsItems.map((item, index) => {
+              return <div key={index} className='footer-row'>
+                <i className="fa-solid fa-arrow-right"></i>
+                <Link to={item.href}>
+                  {item.lable}
+                </Link>
+              </div>
             })
           }
         </div>
@@ -138,15 +134,14 @@ const Footer = () => {
             DỊCH VỤ BẢO TRÌ
           </div>
           {
-            aboutUsItems.map((item) => {
-              return <>
-                <div className='footer-row'>
-                  <i className="fa-solid fa-arrow-right"></i>
-                  <Link to={item.href}>
-                    {item.lable}
-                  </Link>
-                </div>
-              </>
+            aboutUsItems.map((item, index) => {
+              return <div key={index} className='footer-row'>
+                <i className="fa-solid fa-arrow-right"></i>
+                <Link to={item.href}>
+                  {item.lable}
+                </Link>
+              </div>
+
             })
           }
         </div>

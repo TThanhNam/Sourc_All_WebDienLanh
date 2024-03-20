@@ -9,19 +9,19 @@ const RACM = () => {
       <div className="regular-air-conditioning-maintenance-container col-lg-12 wrapper-content">
          <br />
          <br />
-         <h4>DỊCH VỤ VỆ SINH MÁY LẠNH HOPNHAT CHUYÊN NGHIỆP – Giữ máy lạnh luôn sạch đẹp, hoạt động hiệu quả</h4>
-         <h5>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</h5>
+         <div className='title'>DỊCH VỤ VỆ SINH MÁY GIẶT HOPNHAT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</div>
+         <div className='content' style={{ padding: '0' }}>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</div >
          <hr />
          <center>
-            <h2>
+            <div className="title">
                NHANH CHÓNG – CHÍNH XÁC – CHẤT LƯỢNG
-            </h2>
-            <h2 style={{ color: 'red' }}>
+            </div>
+            <div className="title" style={{ color: 'red' }}>
                BẢO HÀNH DÀI HẠN
-            </h2>
-            <h2 >
+            </div>
+            <div className="title">
                CAM KẾT CÔNG KHAI, MINH BẠCH VỀ CHI PHÍ
-            </h2>
+            </div>
             <br />
 
             <div>
@@ -74,15 +74,15 @@ const RACM = () => {
             <li>Giá cả hợp lý và minh bạch</li>
          </ul>
          <p className='content'><b>Thông tin liên hệ</b></p>
-            <p className='content'>Liên hệ ngay với Hanara để đặt lịch hẹn và trải nghiệm dịch vụ vệ sinh máy giặt chất lượng cao của chúng tôi ngay hôm nay!</p>
-            <ul className='list-content'>
-               <li>Địa chỉ: 419/15 Tô Ngọc Vân Tam phú Thủ Đức</li>
-               <li>Hotline: 0365443972</li>
-               <li>Zalo: 0365443972 (kỹ thuật trưởng)</li>
-               <li>Email: info@hopnhat.com</li>
-               <li>Thứ 2 – chủ nhật: 6h-22h</li>
-               <li>Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></li>  
-            </ul>
+         <p className='content'>Liên hệ ngay với Hanara để đặt lịch hẹn và trải nghiệm dịch vụ vệ sinh máy giặt chất lượng cao của chúng tôi ngay hôm nay!</p>
+         <ul className='list-content'>
+            <li>Địa chỉ: 419/15 Tô Ngọc Vân Tam phú Thủ Đức</li>
+            <li>Hotline: 0365443972</li>
+            <li>Zalo: 0365443972 (kỹ thuật trưởng)</li>
+            <li>Email: info@hopnhat.com</li>
+            <li>Thứ 2 – chủ nhật: 6h-22h</li>
+            <li>Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></li>
+         </ul>
       </div>
    );
 };

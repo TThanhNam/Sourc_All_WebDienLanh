@@ -3,17 +3,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @media screen and (max-width:1000px) {
+    padding: 0 80px;
+    gap: 40px;
+  }
+
   .card {
     border: 1px solid #ddd;
     padding: 15px;
     text-align: center;
-    width: 30%;
-    /* Kích thước mặc định của card */
     margin-bottom: 20px;
     cursor: pointer;
 
     &:hover {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    @media screen and (max-width:1000px) {
+      h3 {
+        font-size: 40px;
+      }
     }
   }
 }

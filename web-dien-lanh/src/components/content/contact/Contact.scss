@@ -1,0 +1,160 @@
+.contact-infor-page-container {
+    display: flex;
+    padding: 140px 100px;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: sepia(90%);
+
+    @media screen and (max-width:1000px) {
+        padding: 140px 10px;
+
+    }
+
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        color: rgb(255, 255, 255);
+
+        .contact-info {
+            margin-bottom: 25px;
+
+            .row-1 {
+                font-size: 35px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .row-2 {
+                font-size: 20px;
+            }
+        }
+
+        .contact-address {
+            display: flex;
+            flex-wrap: wrap;
+
+            .address {
+                text-align: left;
+                padding-right: 20px;
+
+                .address-title {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+
+                .address-content {
+                    font-size: 18px;
+
+                    .list-style {
+                        list-style: none;
+                        padding: 0;
+
+                        .icon {
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            text-align: center;
+
+            .contact-info {
+                margin-bottom: 60px;
+
+                .row-1 {
+                    font-size: 65px;
+                }
+
+                .row-2 {
+                    font-size: 40px;
+                }
+            }
+
+            .contact-address {
+                gap: 60px;
+
+                .address {
+                    .address-title {
+                        font-size: 60px;
+                    }
+
+                    .address-content {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-content {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+
+        .contact-now {
+            padding-bottom: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .form-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .style-input {
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0);
+                border: 3px solid rgba(255, 255, 255, 0.4) !important;
+                color: rgb(255, 255, 255) !important;
+                line-height: 4em;
+                font-size: 19px;
+                padding: 0 10px;
+                outline: none;
+
+                &::placeholder {
+                    color: rgb(255, 255, 255) !important;
+
+                }
+            }
+
+        }
+
+        .row-1 {
+            display: flex;
+
+            .input-name {
+                padding-right: 10px;
+            }
+
+            .input-phone-number {
+                padding-left: 10px;
+            }
+        }
+
+        .row-3 {}
+
+        @media screen and (max-width:1000px) {
+            .contact-now {
+                font-size: 65px;
+            }
+
+            .form-info {
+                .style-input {
+                    line-height: 3em;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+}

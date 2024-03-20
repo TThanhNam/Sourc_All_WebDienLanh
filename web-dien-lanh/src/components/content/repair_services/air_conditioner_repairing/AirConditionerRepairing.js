@@ -6,24 +6,24 @@ const AirConditionerRepairing = () => {
       <div className='air-conditioner-repairing-container col-lg-12 wrapper-content'>
          <br />
          <br />
-         <h4>
+         <div className='title'>
             Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
-         </h4>
-         <h5>
+         </div>
+         <div className='content' style={{ padding: '0' }}>
             Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
-         </h5>
+         </div>
          <hr />
          <center>
-            <h2>
+            <div className='title'>
                Niềm tin của bạn
-            </h2>
-            <h2>
+            </div>
+            <div className='title'>
                Trách nhiệm của chúng tôi
-            </h2>
+            </div>
             <br />
 
             <div>
-               <img src={bamer01} style={{width:'100%'}}/>
+               <img src={bamer01} style={{ width: '100%' }} />
             </div>
          </center>
          <div>
@@ -87,23 +87,23 @@ const AirConditionerRepairing = () => {
             </p>
             <ul className='list-content' style={{ listStyle: 'none' }}>
                <li>1. Tiếp nhận thông tin:</li>
-               <div className='content' style={{marginLeft:'10px'}}>
+               <div className='content' style={{ marginLeft: '10px' }}>
                   Bạn có thể liên hệ với HN qua hotline hoặc zalo, sau đó kĩ thuật viên sẽ tư vấn sơ bộ và hẹn thời gian khảo sát tổng quan về thiết bị tại nhà
                </div>
                <li>2. Kiểm tra sơ bộ và tư vấn</li>
-               <div className='content' style={{marginLeft:'10px'}}>
+               <div className='content' style={{ marginLeft: '10px' }}>
                   Sau khi lắng nghe các vấn đề về thiết bị từ khách hàng nhân viên sẽ tư vấn tổng thể
                </div>
                <li>3. Báo lỗi và chi phí</li>
-               <div className='content' style={{marginLeft:'10px'}}>
+               <div className='content' style={{ marginLeft: '10px' }}>
                   Nhân viên kỹ thuật sẽ kiểm tra máy sau đó dựa vào mức độ gặp sự cố báo chi phí dựa trên bảng giá
                </div>
                <li>4. Tiến hành sữa chữa</li>
-               <div className='content' style={{marginLeft:'10px'}}>
+               <div className='content' style={{ marginLeft: '10px' }}>
                   Tiến hành sữa chữa theo đúng yêu cầu kỹ thuật
                </div>
                <li>5. Kiểm tra lại, bàn giao và thanh toán</li>
-               <div className='content' style={{marginLeft:'10px'}}>
+               <div className='content' style={{ marginLeft: '10px' }}>
                   Khi hoàn tất việc sửa chữa kĩ thuật viên sẽ kiểm tra vận hành trước bàn giao sau đó sẽ viết hóa đơn thanh toán
                </div>
                <li>6. Bảo hành hậu mãi</li>
@@ -119,7 +119,7 @@ const AirConditionerRepairing = () => {
                   Bảng giá dịch vụ tại HOPNHAT
                </h2>
                <br />
-               <table style={{ height: '1797px', width: '93.4728%', borderCollapse: 'collapse', borderColor: '#070708' }} border="đen đậm" cellSpacing="không">
+               <table className='table' style={{ height: '1797px', width: '93.4728%', borderCollapse: 'collapse', borderColor: '#070708' }} border="đen đậm" cellSpacing="không">
                   <tbody>
                      <tr style={{ height: '50px' }}>
                         <td style={{ width: '3.97598%', height: '100px' }} rowSpan={2} />
@@ -309,8 +309,8 @@ const AirConditionerRepairing = () => {
                </table>
             </center>
             <p>&nbsp;</p>
-            <p><strong><span style={{ color: '#0000ff' }}><em>*LƯU Ý</em> <span style={{ color: '#993300' }}><span style={{ color: '#000000' }}>: </span></span></span></strong>Đây là bảng giá tham khảo để quý khách nắm được chi phí khi sửa chữa. Trong trường hợp thực tế thì việc sửa chữa máy lạnh còn phụ thuộc vào những yếu tố sau:</p>
-            <ul>
+            <p className='content' style={{ padding: '0' }}><strong><span style={{ color: '#0000ff' }}><em>*LƯU Ý</em> <span style={{ color: '#993300' }}><span style={{ color: '#000000' }}>: </span></span></span></strong>Đây là bảng giá tham khảo để quý khách nắm được chi phí khi sửa chữa. Trong trường hợp thực tế thì việc sửa chữa máy lạnh còn phụ thuộc vào những yếu tố sau:</p>
+            <ul className='list-content'>
                <li>Thương hiệu máy lạnh:<strong>&nbsp;Daikin, Mitsubishi, Reetech, Toshiba,</strong>&nbsp;… vì mỗi thương hiệu, mỗi dòng máy lạnh sẽ có cơ cấu máy móc và nguyên vật liệu thay thế khác nhau.</li>
                <li>Dòng máy lạnh: Máy lạnh treo tường, máy lạnh âm trần, máy lạnh công nghiệp,…</li>
                <li>Tình trạng hư hỏng của máy lạnh</li>

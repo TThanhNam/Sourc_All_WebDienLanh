@@ -7,12 +7,12 @@ const WashingMachineRepairService = () => {
             <div>
                 <br />
                 <br />
-                <h4>
-                    Dịch vụ sửa chữa tủ lạnh tại nhà giá rẻ-chất lượng cao
-                </h4>
-                <h5>
+                <div className='title'>
+                    Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
+                </div>
+                <div className='content' style={{ padding: '0' }}>
                     Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
-                </h5>
+                </div>
                 <hr />
                 <br />
             </div>
@@ -62,12 +62,14 @@ const WashingMachineRepairService = () => {
                     <li>Vệ sinh máy giặt</li>
                 </ul>
             </div>
-            <p><strong style={{ fontSize: '20.16px' }}><span style={{ color: '#000000' }}><em>Trung tâm điện lạnh HARANA sửa chữa máy giặt các thương hiệu sau</em></span></strong></p>
+            <p><strong><span style={{ color: '#000000' }}>
+                <em className='title'>Trung tâm điện lạnh HARANA sửa chữa máy giặt các thương hiệu sau
+                </em></span></strong></p>
             <table style={{ borderCollapse: 'collapse', width: '100%' }}>
                 <tbody>
                     <tr>
-                        <td style={{ width: '50%' }}>
-                            <ul>
+                        <td>
+                            <ul className='list-content'>
                                 <li>Sửa máy giặt lg</li>
                                 <li>Sửa máy giặt toshiba</li>
                                 <li>Sửa máy giặt gần đây</li>
@@ -79,8 +81,8 @@ const WashingMachineRepairService = () => {
                                 <li><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;sửa máy giặt samsung&quot;}" data-sheets-userformat="{&quot;2&quot;:15233,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:2,&quot;11&quot;:0,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;Lexend&quot;,&quot;16&quot;:9}">sửa máy giặt samsung</span></li>
                             </ul>
                         </td>
-                        <td style={{ width: '50%' }}>
-                            <ul>
+                        <td style={{ display: 'flex' }}>
+                            <ul className='list-content'>
                                 <li>Sửa máy giặt sanyo</li>
                                 <li>Sửa chữa máy giặt electrolux</li>
                                 <li>Sửa máy giặt electrolux tại nhà</li>
@@ -96,7 +98,7 @@ const WashingMachineRepairService = () => {
                 </tbody>
             </table>
 
-            <h3><span id="Bang-gia-sua-may-giat-cua-truoc-long-ngang-Bang-gia-linh-kien-may-giat-cua-truoc"><em>Bảng giá sửa máy giặt <strong><span style={{ color: '#ed1c24' }}>cửa trên, lồng đứng</span></strong>. Bảng giá linh kiện máy giặt cửa trên</em></span></h3>
+            <h3><span id="Bang-gia-sua-may-giat-cua-truoc-long-ngang-Bang-gia-linh-kien-may-giat-cua-truoc"><em className='title'>Bảng giá sửa máy giặt <strong><span style={{ color: '#ed1c24' }}>cửa trên, lồng đứng</span></strong>. Bảng giá linh kiện máy giặt cửa trên</em></span></h3>
             <table style={{ width: '100%', height: '483px' }} border={1} cellSpacing={0} cellPadding={5} className='table table-hover table-bordered align-middle'>
                 <tbody>
                     <tr style={{ height: '21px' }}>
@@ -196,7 +198,7 @@ const WashingMachineRepairService = () => {
                     </tr>
                 </tbody>
             </table>
-            <h3><span id="Bang-gia-sua-may-giat-cua-truoc-long-ngang-Bang-gia-linh-kien-may-giat-cua-truoc"><em>Bảng giá sửa máy giặt <strong><span style={{ color: '#ed1c24' }}>cửa trước, lồng ngang</span></strong>. Bảng giá linh kiện máy giặt cửa trước</em></span></h3>
+            <h3><span id="Bang-gia-sua-may-giat-cua-truoc-long-ngang-Bang-gia-linh-kien-may-giat-cua-truoc"><em className='title'>Bảng giá sửa máy giặt <strong><span style={{ color: '#ed1c24' }}>cửa trước, lồng ngang</span></strong>. Bảng giá linh kiện máy giặt cửa trước</em></span></h3>
             <table border={1} cellSpacing={0} cellPadding={5} className='table table-hover table-bordered align-middle'>
                 <tbody>
                     <tr>
@@ -296,7 +298,14 @@ const WashingMachineRepairService = () => {
                     </tr>
                 </tbody>
             </table>
-            <p><span style={{ color: '#ed1c24' }}><em><strong>Lưu ý:</strong> bảng giá mang tính chất tham khảo không chính xác 100%. Giá thành có thể thay đổi phụ thuộc vào nhiều yếu tố: Hãng, số KG của máy, Model,…</em></span></p>
+            <p>
+                <span style={{ color: '#ed1c24' }}>
+                    <em className='content' style={{padding:'0'}}>
+                        <strong >Lưu ý:</strong >
+                        bảng giá mang tính chất tham khảo không chính xác 100%. Giá thành có thể thay đổi phụ thuộc vào nhiều yếu tố: Hãng, số KG của máy, Model,…
+                    </em>
+                </span>
+            </p>
 
             <p>&nbsp;</p>
             <p>&nbsp;</p>

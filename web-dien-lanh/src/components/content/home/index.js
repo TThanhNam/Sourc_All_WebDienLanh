@@ -182,19 +182,18 @@ const Index = () => {
                </div>
                <div className='list-service row'>
                   {
-                     constructionService.map((item) => {
-                        return <>
-                           <Link
-                              className='col-12 col-lg-4 tile'
-                              style={{ marginBottom: '30px' }}
-                              to={'#'}>
-                              <img src={item.src} />
-                              <div className="details">
-                                 <span className="title">{item.title}</span>
-                                 <span className="info">{item.description}</span>
-                              </div>
-                           </Link>
-                        </>
+                     constructionService.map((item, index) => {
+                        return <Link
+                           key={index}
+                           className='col-12 col-lg-4 tile'
+                           style={{ marginBottom: '30px' }}
+                           to={'#'}>
+                           <img src={item.src} />
+                           <div className="details">
+                              <span className="title">{item.title}</span>
+                              <span className="info">{item.description}</span>
+                           </div>
+                        </Link>
                      })
                   }
                </div>
@@ -204,7 +203,7 @@ const Index = () => {
             <div className='main-content achievement-content col-lg-12'>
                <div className='col-12 col-lg-4 achievement-content-wrapper'>
                   <div className='achievement-content-icon col-4 col-lg-6'>
-                     <i class="fa-solid fa-fan"></i>
+                     <i className="fa-solid fa-fan"></i>
                   </div>
                   <div className='achievement-content-detail col-8 col-lg-6'>
                      <div className='achievement-content-row-1'>
@@ -217,7 +216,7 @@ const Index = () => {
                </div>
                <div className='col-12 col-lg-4 achievement-content-wrapper'>
                   <div className='achievement-content-icon col-4 col-lg-6'>
-                     <i class="fa-regular fa-face-smile-beam"></i>
+                     <i className="fa-regular fa-face-smile-beam"></i>
                   </div>
                   <div className='achievement-content-detail col-8 col-lg-6'>
                      <div className='achievement-content-row-1'>
@@ -230,7 +229,7 @@ const Index = () => {
                </div>
                <div className='col-12 col-lg-4 achievement-content-wrapper'>
                   <div className='achievement-content-icon col-4 col-lg-6'>
-                     <i class="fa-regular fa-hourglass-half"></i>
+                     <i className="fa-regular fa-hourglass-half"></i>
                   </div>
                   <div className='achievement-content-detail col-8 col-lg-6'>
                      <div className='achievement-content-row-1'>
@@ -245,7 +244,7 @@ const Index = () => {
          </div>
          <div className='main-content'>
             <div className='our-team col-12'>
-               <div className='middle-content why-choose-us row-all-team-infor col-12 col-lg-3' style={{ margin: '70px 0px' }}>
+               <div className='middle-content why-choose-us row-all-team-infor col-12 col-lg-3'>
                   <center>
                      <div className='row-1'>
                         Đội ngũ chuyên nghiệp
@@ -271,17 +270,17 @@ const Index = () => {
                         Trưởng phòng HOPNHAT
                      </div>
                      <div className='icon-contact'>
-                        <ul>
-                           <li>
-                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        <ul className='col-12'>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                           <li>
-                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
                         </ul>
                      </div>
                   </div>
@@ -297,17 +296,17 @@ const Index = () => {
                         Phó phòng HOPNHAT
                      </div>
                      <div className='icon-contact'>
-                        <ul>
-                           <li>
-                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        <ul className='col-12' >
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                           <li>
-                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
                         </ul>
                      </div>
                   </div>
@@ -322,17 +321,17 @@ const Index = () => {
                         Nhân viên HOPNHAT
                      </div>
                      <div className='icon-contact'>
-                        <ul>
-                           <li>
-                              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        <ul className='col-12'>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-twitter icon"></i></a>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
                            </li>
-                           <li>
-                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                           <li>
-                              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
                         </ul>
                      </div>
                   </div>

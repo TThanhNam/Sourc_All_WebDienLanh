@@ -11,22 +11,24 @@ import RefrigeratorRepairService from './repair_services/refrigerator_repair_ser
 import Maintenance from './maintenance/Maintenance.js'
 import RACM from './maintenance/regular-air-conditioning-maintenance/RACM.js'
 import CWM from './maintenance/cleaning_the_washing_machine/CWM.js'
+import Contact from './contact/Contact.js'
 const Index = () => {
   return (
     <div className='content-all-continer'>
 
-        <Routes>
-          <Route index path='/' element={<HomePage />} />
-          <Route path='/home-page' element={<HomePage />} />
-          <Route path='/introduction' element={<Intro />} />
-          <Route path='/repair-services' element={<RepairServices />} />
-          <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
-          <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
-          <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
-          <Route path='/maintenance' element={<Maintenance />} />
-          <Route path='/regular-air-conditioning-maintenance' element={<RACM />} />
-          <Route path='/cleaning-the-washing-machine' element={<CWM />} />
-        </Routes>
+      <Routes>
+        <Route index path='/' element={<HomePage />} />
+        <Route path='/home-page' element={<HomePage />} />
+        <Route path='/introduction' element={<Intro />} />
+        <Route path='/repair-services' element={<RepairServices />} />
+        <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
+        <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
+        <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
+        <Route path='/maintenance' element={<Maintenance />} />
+        <Route path='/regular-air-conditioning-maintenance' element={<RACM />} />
+        <Route path='/cleaning-the-washing-machine' element={<CWM />} />
+        <Route path='/contact-us' element={<Contact/>} />
+      </Routes>
     </div>
   )
 }

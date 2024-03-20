@@ -7,15 +7,15 @@ const RefrigeratorRepairService = () => {
         <div className="refrigerator-repair-service-container">
             <br />
             <br />
-            <h4>
-                Dịch vụ sửa chữa tủ lạnh tại nhà giá rẻ-chất lượng cao
-            </h4>
-            <h5>
+            <div className='title'>
+                Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
+            </div>
+            <div className='content' style={{ padding: '0' }}>
                 Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
-            </h5>
+            </div>
             <hr />
             <br />
-            <div style={{textAlign:'center'}}>
+            <div style={{ textAlign: 'center' }}>
                 <img src={img1}></img>
             </div>
             <div>
@@ -39,7 +39,7 @@ const RefrigeratorRepairService = () => {
                 <p className='title'>
                     #Bạn nên chọn chúng tôi vì
                 </p>
-                <ul>
+                <ul className='list-content'>
                     <li>Với nhiều năm kinh nghiệm trong lĩnh vực điện lạnh</li>
                     <li>Cam kết linh kiện chính hãng 100%</li>
                     <li>Giải pháp toàn diện để tăng hiệu suất và độ bền cho tủ lạnh</li>
@@ -48,7 +48,7 @@ const RefrigeratorRepairService = () => {
                 </ul>
             </div>
             <div>
-                <h2>Liên hệ</h2>
+                <h2 className='title'>Liên hệ</h2>
                 <p className='content'>-Hotline: 0365443972</p>
                 <p className='content'>-Zalo: 0365443972 (kỹ thuật trưởng)</p>
                 <p className='content'>-Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></p>
@@ -57,36 +57,39 @@ const RefrigeratorRepairService = () => {
                 <p className='content'>-Địa chỉ: 419/15 Tô Ngọc Vân Tam phú Thủ Đức</p>
             </div>
 
-            <h2>Giá sửa tủ lạnh tại nhà</h2>
-            <table style={{ width: '80.2761%', height: '250px'}} width={652} className='table'>
-                <tbody>
-                    <tr style={{ height: '50px' }}>
-                        <td style={{ height: '50px' }}>Dịch vụ</td>
-                        <td style={{ height: '50px' }}>Đơn vị</td>
-                        <td style={{ height: '50px' }}>Đơn&nbsp;Giá</td>
-                    </tr>
-                    <tr style={{ height: '50px' }}>
-                        <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &lt; 220 lít</td>
-                        <td style={{ height: '50px' }}>Bộ</td>
-                        <td style={{ height: '50px' }}>700.000đ – 1.300.000đ</td>
-                    </tr>
-                    <tr style={{ height: '50px' }}>
-                        <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &gt; 220 lít</td>
-                        <td style={{ height: '50px' }}>Bộ</td>
-                        <td style={{ height: '50px' }}>1.500.000đ – 1.900.000đ</td>
-                    </tr>
-                    <tr style={{ height: '50px' }}>
-                        <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh&nbsp;Inverter</td>
-                        <td style={{ height: '50px' }}>Bộ</td>
-                        <td style={{ height: '50px' }}>2.100.000đ – 2.500.000đ</td>
-                    </tr>
-                    <tr style={{ height: '50px' }}>
-                        <td style={{ height: '50px' }}>Hàn dây đồng và nạp gas&nbsp;120 – 140 lít</td>
-                        <td style={{ height: '50px' }}>Bộ</td>
-                        <td style={{ height: '50px' }}>850.000đ – 1.000.000đ</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2 className='title'>Giá sửa tủ lạnh tại nhà</h2>
+            <center>
+                <table style={{ width: '80.2761%', height: '250px' }} width={652} className='table'>
+                    <tbody>
+                        <tr style={{ height: '50px' }}>
+                            <td style={{ height: '50px' }}>Dịch vụ</td>
+                            <td style={{ height: '50px' }}>Đơn vị</td>
+                            <td style={{ height: '50px' }}>Đơn&nbsp;Giá</td>
+                        </tr>
+                        <tr style={{ height: '50px' }}>
+                            <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &lt; 220 lít</td>
+                            <td style={{ height: '50px' }}>Bộ</td>
+                            <td style={{ height: '50px' }}>700.000đ – 1.300.000đ</td>
+                        </tr>
+                        <tr style={{ height: '50px' }}>
+                            <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &gt; 220 lít</td>
+                            <td style={{ height: '50px' }}>Bộ</td>
+                            <td style={{ height: '50px' }}>1.500.000đ – 1.900.000đ</td>
+                        </tr>
+                        <tr style={{ height: '50px' }}>
+                            <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh&nbsp;Inverter</td>
+                            <td style={{ height: '50px' }}>Bộ</td>
+                            <td style={{ height: '50px' }}>2.100.000đ – 2.500.000đ</td>
+                        </tr>
+                        <tr style={{ height: '50px' }}>
+                            <td style={{ height: '50px' }}>Hàn dây đồng và nạp gas&nbsp;120 – 140 lít</td>
+                            <td style={{ height: '50px' }}>Bộ</td>
+                            <td style={{ height: '50px' }}>850.000đ – 1.000.000đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
 
 
 

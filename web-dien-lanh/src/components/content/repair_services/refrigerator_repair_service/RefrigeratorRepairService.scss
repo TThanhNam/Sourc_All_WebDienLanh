@@ -1,4 +1,7 @@
 .refrigerator-repair-service-container {
     width: 80%;
     max-width: 1200px;
+    @media screen and (max-width:1000px) {
+        width: 100%;
+    }
 }

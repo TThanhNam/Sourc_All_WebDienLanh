@@ -2,15 +2,11 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-evenly;
 
-.card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  width: 30%; /* Kích thước mặc định của card */
-  margin-bottom: 20px;
+  @media screen and (max-width:1000px) {
+    justify-content: center;
+  }
 }
 
 img {
@@ -19,15 +15,11 @@ img {
 }
 
 h3 {
-  font-size: 1.2em; /* Giảm kích thước của tiêu đề */
+  font-size: 1.2em;
+  /* Giảm kích thước của tiêu đề */
 }
 
 p {
-  font-size: 0.9em; /* Giảm kích thước của nội dung */
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 48%; /* Kích thước của card khi màn hình nhỏ hơn 768px */
-  }
+  font-size: 0.9em;
+  /* Giảm kích thước của nội dung */
 }
