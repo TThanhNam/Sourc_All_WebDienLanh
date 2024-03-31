@@ -166,7 +166,7 @@ const Index = () => {
                            key={index}
                            className='col-12 col-lg-4 tile'
                            to={'#'}>
-                           <img src={item.src} />
+                           <img src={item.src} loading='lazy'/>
                            <div className="details">
                               <span className="title">{item.title}</span>
                               <span className="info">{item.description}</span>
@@ -188,7 +188,7 @@ const Index = () => {
                            className='col-12 col-lg-4 tile'
                            style={{ marginBottom: '30px' }}
                            to={'#'}>
-                           <img src={item.src} />
+                           <img src={item.src} loading='lazy'/>
                            <div className="details">
                               <span className="title">{item.title}</span>
                               <span className="info">{item.description}</span>
@@ -261,7 +261,7 @@ const Index = () => {
                   </center>
                </div>
                <div className='row-member-infor col-12 col-lg-3'>
-                  <img src={member01} />
+                  <img src={member01} loading='lazy'/>
                   <div className="placehoder">
                      <div className='title'>
                         Đặng Văn Hợp
@@ -287,7 +287,7 @@ const Index = () => {
 
                </div>
                <div className='row-member-infor col-12 col-lg-3'>
-                  <img src={member02} />
+                  <img src={member02} loading='lazy'/>
                   <div className="placehoder">
                      <div className='title'>
                         Đặng Văn C
@@ -312,7 +312,7 @@ const Index = () => {
                   </div>
                </div>
                <div className='row-member-infor col-12 col-lg-3'>
-                  <img src={member03} />
+                  <img src={member03} loading='lazy'/>
                   <div className="placehoder">
                      <div className='title'>
                         Đặng Văn B

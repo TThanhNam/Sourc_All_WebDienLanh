@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import className from 'classnames'
 import { Drawer, Dropdown, Menu } from 'antd';
 import { HomeOutlined, InfoCircleOutlined, ProfileOutlined, SettingOutlined, ToolOutlined } from '@ant-design/icons';
+import { URL } from '../../share/constance';
 const HOME_ACT = 'home-page';
 const INTRODUCTION_ACT = 'introduction';
 const REPAIRSERVICE_ACT = 'repair-services';
@@ -43,7 +44,7 @@ const Nav = () => {
       {
          key: '1',
          label: (
-            <Link to="/air-condition-repairing" style={{ textDecoration: 'none' }}>
+            <Link to={URL.REPAIR_SERVICES.AIR_CONDITION_REPAIRING} style={{ textDecoration: 'none' }}>
                Sửa chữa máy lạnh
             </Link>
          ),
@@ -51,7 +52,7 @@ const Nav = () => {
       {
          key: '2',
          label: (
-            <Link to="/refrigerator-machine-repair-service" style={{ textDecoration: 'none' }}>
+            <Link to={URL.REPAIR_SERVICES.REFRIGERATOR_MACHINE_REPAIR_SERVICE} style={{ textDecoration: 'none' }}>
                Sửa chữa tủ lạnh
             </Link>
          ),
@@ -59,7 +60,7 @@ const Nav = () => {
       {
          key: '3',
          label: (
-            <Link to="/washing-machine-repair-service" style={{ textDecoration: 'none' }}>
+            <Link to={URL.REPAIR_SERVICES.WASHING_MACHINE_REPAIR_SERVICE} style={{ textDecoration: 'none' }}>
                Sửa chữa máy giặt
             </Link>
          ),
@@ -69,14 +70,14 @@ const Nav = () => {
       {
          key: HOME_ACT,
          icon: <HomeOutlined style={{ fontSize: '30px' }} />,
-         label: <Link to={"/home-page"}
+         label: <Link to={URL.HOME}
 
          >Trang Chủ </Link>,
       },
       {
          icon: <InfoCircleOutlined style={{ fontSize: '30px' }} />,
          key: INTRODUCTION_ACT,
-         label: <Link to={"/introduction"}
+         label: <Link to={URL.INTRODUCTION}
          >
             Giới Thiệu
          </Link>,
@@ -84,26 +85,26 @@ const Nav = () => {
       {
          icon: <ToolOutlined style={{ fontSize: '30px' }} />,
          key: REPAIRSERVICE_ACT,
-         label: <Link to={"/repair-services"}
+         label: <Link to={URL.REPAIR_SERVICE}
          >
             Dịch Vụ Sửa Chữa
          </Link>,
          children: [
             {
                key: REPAIRSERVICE_ACT_1,
-               label: <Link to="/air-condition-repairing" style={{ textDecoration: 'none' }}>
+               label: <Link to={URL.REPAIR_SERVICES.AIR_CONDITION_REPAIRING} style={{ textDecoration: 'none' }}>
                   Sửa chữa máy lạnh
                </Link>,
             },
             {
                key: REPAIRSERVICE_ACT_2,
-               label: <Link to="/washing-machine-repair-service" style={{ textDecoration: 'none' }}>
+               label: <Link to={URL.REPAIR_SERVICES.WASHING_MACHINE_REPAIR_SERVICE} style={{ textDecoration: 'none' }}>
                   Sửa chữa máy giặt
                </Link>,
             },
             {
                key: REPAIRSERVICE_ACT_3,
-               label: <Link to="/refrigerator-machine-repair-service" style={{ textDecoration: 'none' }}>
+               label: <Link to={URL.REPAIR_SERVICES.REFRIGERATOR_MACHINE_REPAIR_SERVICE} style={{ textDecoration: 'none' }}>
                   Sửa chữa tủ lạnh
                </Link>,
             },
@@ -112,7 +113,7 @@ const Nav = () => {
       {
          icon: <SettingOutlined style={{ fontSize: '30px' }} />,
          key: MAINTENANCE_ACT,
-         label: <Link to={"/maintenance"}
+         label: <Link to={URL.MAINTENANCE}
 
          >
             Dịch Vụ Bảo Trì
@@ -121,13 +122,13 @@ const Nav = () => {
          children: [
             {
                key: MAINTENANCE_ACT_1,
-               label: <Link to="/regular-air-conditioning-maintenance" style={{ textDecoration: 'none' }}>
+               label: <Link to={URL.MAINTENANCES.REGULAR_AIR_CONDITIONING_MAINTENANCE} style={{ textDecoration: 'none' }}>
                   Bảo trì máy lạnh
                </Link>,
             },
             {
                key: MAINTENANCE_ACT_2,
-               label: <Link to="/cleaning-the-washing-machine" style={{ textDecoration: 'none' }}>
+               label: <Link to={URL.MAINTENANCES.CLEANING_THE_WASHING_MACHINE} style={{ textDecoration: 'none' }}>
                   Bảo trì máy giặt
                </Link>,
             },
@@ -136,7 +137,7 @@ const Nav = () => {
       {
          icon: <ProfileOutlined style={{ fontSize: '30px' }} />,
          key: CONTACT_ACT,
-         label: <Link to={"/contact-us"}
+         label: <Link to={URL.CONTACT_US}
          >
             Liên hệ
          </Link>,
@@ -153,15 +154,14 @@ const Nav = () => {
             </div>
             <div className='nav-content col-lg-8'>
                <ul>
-                  <li className={className({ 'active': location.pathname.substring(1) === HOME_ACT })}>
-                     <Link to={"/home-page"}
-
+                  <li className={className({ 'active': location.pathname.substring(1) === HOME_ACT ||  location.pathname.substring(1) === ""})}>
+                     <Link to={URL.HOME}
                      >
                         Trang Chủ
                      </Link>
                   </li>
                   <li className={className({ 'active': location.pathname.substring(1) === INTRODUCTION_ACT })}>
-                     <Link to={"/introduction"}>
+                     <Link to={URL.INTRODUCTION}>
                         Giới Thiệu
                      </Link>
                   </li>
@@ -173,7 +173,7 @@ const Nav = () => {
                            location.pathname.substring(1) === REPAIRSERVICE_ACT_3
                      })}>
                      <Dropdown menu={{ items: repairserviceItems }} placement="bottomRight" arrow>
-                        <Link to={"/repair-services"}
+                        <Link to={URL.REPAIR_SERVICE}
                         >
                            Dịch Vụ Sửa Chữa
                            <i className="fa-solid fa-caret-down"></i>
@@ -187,7 +187,7 @@ const Nav = () => {
                            location.pathname.substring(1) == MAINTENANCE_ACT_2
                      })}>
                      <Dropdown menu={{ items: maintenanceItems }} placement="bottomRight" arrow>
-                        <Link to={"/maintenance"}
+                        <Link to={URL.MAINTENANCE}
                         >
                            Dịch Vụ Bảo Trì
                            <i className="fa-solid fa-caret-down"></i>
@@ -195,7 +195,7 @@ const Nav = () => {
                      </Dropdown>
                   </li>
                   <li className={className({ 'active': location.pathname.substring(1) === CONTACT_ACT })}>
-                     <Link to={"/contact-us"}>
+                     <Link to={URL.CONTACT_US}>
                         Liên hệ
                      </Link>
                   </li>

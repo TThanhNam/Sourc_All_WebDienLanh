@@ -2,59 +2,31 @@ import React from 'react'
 import { EnvironmentOutlined } from '@ant-design/icons'
 import './Footer.scss'
 import { Link } from 'react-router-dom'
+import { URL } from '../../share/constance'
+import RepairServices from '../content/repair_services/RepairServices'
 
-const aboutUsItems = [
-  {
-    lable: 'Về chúng tôi',
-    href: '#'
-  },
-  {
-    lable: 'Cẩm nang',
-    href: '#'
-  },
-  {
-    lable: 'Tuyển dụng',
-    href: '#'
-  },
-  {
-    lable: 'Bảng giá',
-    href: '#'
-  },
-]
 const reapaireItems = [
   {
-    lable: 'Về chúng tôi',
-    href: '#'
+    lable: 'Sửa chữa máy lạnh',
+    href: URL.REPAIR_SERVICES.AIR_CONDITION_REPAIRING
   },
   {
-    lable: 'Cẩm nang',
-    href: '#'
+    lable: "Sửa chữa tủ lạnh",
+    href: URL.REPAIR_SERVICES.REFRIGERATOR_MACHINE_REPAIR_SERVICE
   },
   {
-    lable: 'Tuyển dụng',
-    href: '#'
-  },
-  {
-    lable: 'Bảng giá',
-    href: '#'
+    lable: 'Sửa chữa máy giặt',
+    href: URL.REPAIR_SERVICES.WASHING_MACHINE_REPAIR_SERVICE
   },
 ]
 const maintanceItems = [
   {
-    lable: 'Về chúng tôi',
-    href: '#'
+    lable: 'Bảo trì máy lạnh',
+    href: URL.MAINTENANCES.REGULAR_AIR_CONDITIONING_MAINTENANCE
   },
   {
-    lable: 'Cẩm nang',
-    href: '#'
-  },
-  {
-    lable: 'Tuyển dụng',
-    href: '#'
-  },
-  {
-    lable: 'Bảng giá',
-    href: '#'
+    lable: 'Bảo trì máy giặt',
+    href: URL.MAINTENANCES.CLEANING_THE_WASHING_MACHINE
   },
 ]
 
@@ -64,7 +36,7 @@ const Footer = () => {
       <div className='footer-infor col-lg-12'>
         <div className='contact-infor-container col-lg-4 col-12'>
           <div className='footer-name title'>
-            CỬA HÀNG HỢP ĐIỆN LẠNH
+            ĐIỆN LẠNH HỢP NHẤT
           </div>
           <div className='footer-addressed contact-row'>
             <div className='left-col'>
@@ -99,27 +71,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='about-us-container col-lg-2 col-12'>
-          <div className='footer-title title'>
-            THÔNG TIN
-          </div>
-          {
-            aboutUsItems.map((item, index) => {
-              return <div key={index} className='footer-row'>
-                <i className="fa-solid fa-arrow-right"></i>
-                <Link to={item.href}>
-                  {item.lable}
-                </Link>
-              </div>
-            })
-          }
-        </div>
         <div className='footer-reapaire-container col-lg-3 col-12'>
           <div className='footer-title title'>
             DỊCH VỤ SỬA CHỮA
           </div>
           {
-            aboutUsItems.map((item, index) => {
+            reapaireItems.map((item, index) => {
               return <div key={index} className='footer-row'>
                 <i className="fa-solid fa-arrow-right"></i>
                 <Link to={item.href}>
@@ -134,7 +91,7 @@ const Footer = () => {
             DỊCH VỤ BẢO TRÌ
           </div>
           {
-            aboutUsItems.map((item, index) => {
+            maintanceItems.map((item, index) => {
               return <div key={index} className='footer-row'>
                 <i className="fa-solid fa-arrow-right"></i>
                 <Link to={item.href}>
@@ -145,10 +102,28 @@ const Footer = () => {
             })
           }
         </div>
-
+        <div className='about-us-container col-lg-2 col-12'>
+          <div className='footer-title title'>
+            LIÊN HỆ
+          </div>
+          <div className='icon-contact'>
+            <ul className='col-12'>
+              <li className='col-3'>
+                <a href="#"><i className="fab fa-facebook-f icon"></i></a>
+              </li>
+              <li className='col-3'>
+                <a href="#"><i className="fab fa-twitter icon"></i></a>
+              </li>
+              <li className='col-3'>
+                <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+              <li className='col-3'>
+                <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div className='design-infor-container'>
-        ádfasdf
+        <span >Copyright 2024 © <strong>ĐIỆN LẠNH HỢP NHẤT</strong></span>
       </div>
     </div>
   )

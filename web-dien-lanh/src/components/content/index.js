@@ -12,22 +12,23 @@ import Maintenance from './maintenance/Maintenance.js'
 import RACM from './maintenance/regular-air-conditioning-maintenance/RACM.js'
 import CWM from './maintenance/cleaning_the_washing_machine/CWM.js'
 import Contact from './contact/Contact.js'
+import { URL } from '../../share/constance.js'
 const Index = () => {
   return (
     <div className='content-all-continer'>
 
       <Routes>
         <Route index path='/' element={<HomePage />} />
-        <Route path='/home-page' element={<HomePage />} />
-        <Route path='/introduction' element={<Intro />} />
-        <Route path='/repair-services' element={<RepairServices />} />
-        <Route path='/air-condition-repairing' element={<AirConditionerRepairing />} />
-        <Route path='/washing-machine-repair-service' element={<WashingMachineRepairService />} />
-        <Route path='/refrigerator-machine-repair-service' element={<RefrigeratorRepairService />} />
-        <Route path='/maintenance' element={<Maintenance />} />
-        <Route path='/regular-air-conditioning-maintenance' element={<RACM />} />
-        <Route path='/cleaning-the-washing-machine' element={<CWM />} />
-        <Route path='/contact-us' element={<Contact/>} />
+        <Route path={URL.HOME} element={<HomePage />} />
+        <Route path={URL.INTRODUCTION} element={<Intro />} />
+        <Route path={URL.REPAIR_SERVICE} element={<RepairServices />} />
+        <Route path={URL.REPAIR_SERVICES.AIR_CONDITION_REPAIRING} element={<AirConditionerRepairing />} />
+        <Route path={URL.REPAIR_SERVICES.WASHING_MACHINE_REPAIR_SERVICE} element={<WashingMachineRepairService />} />
+        <Route path={URL.REPAIR_SERVICES.REFRIGERATOR_MACHINE_REPAIR_SERVICE} element={<RefrigeratorRepairService />} />
+        <Route path={URL.MAINTENANCE} element={<Maintenance />} />
+        <Route path={URL.MAINTENANCES.REGULAR_AIR_CONDITIONING_MAINTENANCE} element={<RACM />} />
+        <Route path={URL.MAINTENANCES.CLEANING_THE_WASHING_MACHINE} element={<CWM />} />
+        <Route path={URL.CONTACT_US} element={<Contact/>} />
       </Routes>
     </div>
   )

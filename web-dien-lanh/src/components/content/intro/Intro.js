@@ -2,8 +2,10 @@ import React from 'react'
 import BannerImage from '../../../images/1CwH9mAibSg2qeIuq0cs4.jpg'
 import ServiceImage from '../../../images/Rectangle.png'
 import './Intro.scss'
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
+	const navigate = useNavigate();
 	return (
 		<div className='about-us-conatiner'>
 			<div className='banner-wrapper' style={{ backgroundImage: `url(${BannerImage})` }}>
@@ -13,32 +15,34 @@ const Intro = () => {
 							Về chúng tôi
 						</div>
 						<div className='content-1-row-2'>
-							Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas faucibus mollis interdum festibulum id ligula porta felis Lorem ipsum dolor sit amet
+							Cửa hàng điện lạnh hợp nhất chúng tôi trân trọng đem đến quý khách hàng các gói dịch vụ về sửa chữa,
+							bảo trì, dịch vụ lắp đặt thi công các công trình lớn nhỏ nhằm đáp ứng
+							và cung cấp chất lượng dịch vụ tốt nhất cho quý khách.
 						</div>
 					</div>
 					<div className='content-2 col-12 col-lg-4'>
 						<div className='content-2-row'>
-							<i className="icon fa-solid fa-circle-check"></i>
+							<i class="icon fa-solid fa-truck-fast"></i>
 							<div>
-								High Quality, Ethically Sourced Materials
+								Nhanh chóng
 							</div>
 						</div>
 						<div className='content-2-row'>
-							<i className="icon fa-solid fa-circle-check"></i>
+							<i class="icon fa-solid fa-shield"></i>
 							<div>
-								High Quality, Ethically Sourced Materials
+								An toàn
 							</div>
 						</div>
 						<div className='content-2-row'>
-							<i className="icon fa-solid fa-circle-check"></i>
+							<i class="icon fa-solid fa-piggy-bank"></i>
 							<div>
-								High Quality, Ethically Sourced Materials
+								Tiết kiệm
 							</div>
 						</div>
 						<div className='content-2-row'>
-							<i className="icon fa-solid fa-circle-check"></i>
+							<i class="icon fa-solid fa-calendar-check"></i>
 							<div>
-								High Quality, Ethically Sourced Materials
+								Mọi lúc mọi nơi
 							</div>
 						</div>
 					</div>
@@ -53,40 +57,39 @@ const Intro = () => {
 						Lịch Sử Phát Triển
 					</div>
 					<div className='left-content-row' style={{ marginBottom: '10px' }}>
-						Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur
-						est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-						dolor auctor. Maecenas faucibus mollis interdum. Cum sociis natoque
-						penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
+						Điện lạnh HỢP NHẤT là đơn vị chuyên nghiệp trong lĩnh vực điện lạnh. Có chuyên môn cao suốt nhiều năm trong nghề,
+						chúng tôi đã thực hiện hàng ngàn công trình lắp đặt, sửa chữa các thiết bị điện lạnh. Với chúng tôi, sự tin tưởng, ủy thác của khách hàng là ưu tiên hàng đầu.
+						Chúng tôi luôn cố gắng hoàn thiện công trình lắp đặt, sửa chữa thiết bị một cách tốt nhất, hoàn hảo nhất.
+						Với trình độ chuyên môn trong lĩnh vực điện lạnh, chúng tôi luôn sẵn sàng mang đến cho quý khách những trải nghiệm tuyệt vời nhất.
 					</div>
-					<div className='left-content-row'>
-						Penatibus et magnis dis parturient montes,
-						nascetur ridiculus mus. Nullam quis risus eget
-						urna mollis ornare vel eu leo. Maecenas faucibus
-						mollis interdum. Nulla vitae elit libero,
-						a pharetra augue.Cum sociis natoque penatibus
-						et magnis dis parturient montes, nascetur
-
+					<div className='left-content-row' style={{ marginBottom: '10px' }}>
+						Đến với cửa hàng điện lạnh HỢP NHẤT khách hàng sẽ được trải nghiệm một sự uy tín, nhanh chóng, chuyên nghiệp hàng đầu.
+						Ngoài việc cung cấp những dịch vụ sửa chữa,
+						vệ sinh cho các cá nhân, hộ gia đình Hanara còn chuyên cung cấp các gói dịch vụ sửa chữa,
+						bảo trì cho các đơn vị tổ chức có quy mô như các doanh nghiệp, các trường học, các hệ thống chuỗi nhà hàng,
+						các phòng Gym, quán xá, công trình chung cư… .
 					</div>
+
 				</div>
 				<div className='right-content col-lg-6'>
 					<div className='right-content-row'>
 						<div className='content-title'>
-							Nhiệm Vụ Của Chúng Tôi
+							Triết Lý Kinh Doanh
 						</div>
 						<div className='right-content-content'>
-							Donec ullamcorper nulla non metus auctor fringilla.
-							Sed posuere consectetur est at lobortis. Vivamus sagittis
-							lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas
-							faucibus mollis
+							Ngay từ những ngày đầu thành lập HỢP NHẤT đã xây dựng cho mình triết lý kinh doanh “Lấy khách hàng làm trọng tâm” cụ thể:
+							Lấy sự hài lòng của khách hàng làm kim chỉ nam cho mọi hoạt động kinh doanh của cửa hàng.
+							Luôn luôn lắng nghe, phân tích và thấu hiểu nhu cầu của từng khách hàng.
 						</div>
 					</div>
 					<div className='right-content-row'>
 						<div className='content-title'>
-							Trách Nhiệm Của Chúng Tôi
+							Đội Ngũ Nhân Viên
 						</div>
 						<div className='right-content-content'>
-							Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis
+							Chúng tôi có một đội ngũ nhân viên xuất sắc với tay nghề lâu năm, dày dạn kinh nghiệm bên cạnh đó là thái độ phục vụ chuyên nghiệp,
+							nhanh nhẹn, cẩn thận và tỉ mỉ và được tuyển chọn kỹ lưỡng, mỗi cá nhân kỹ thuật viên đến nhân viên tư vấn luôn tận tình với khách hàng.
+							Mang đến chất lượng dịch vụ tốt nhất làm hài lòng tất cả khách hàng và đối tác.
 						</div>
 					</div>
 				</div>
@@ -150,38 +153,35 @@ const Intro = () => {
 				</div>
 			</div>
 			<div className='my-service-container'>
-				<div className='service repair-service col-lg-4' style={{backgroundImage: `url(${ServiceImage})`}}>
+				<div className='service repair-service col-lg-4' style={{ backgroundImage: `url(${ServiceImage})` }}>
 					<div className='service-title'>
 						Dich vụ sửa chữa
 					</div>
 					<div className='service-content'>
-						Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit. Vestibulum nec odios Suspe
-						ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit.
+						Điện Lạnh HỢP NHẤT mang đến khách hàng dịch vụ sửa chữa chuyên nghiệp tận nhà uy tín tại khắp tất cả các Quận,
+						Huyện khu vực thành phố Hồ Chí Minh.
 					</div>
 					<div className='service-view-more'>
-						
-						<span className="btn-view-more">Xem Thêm </span>
+						<span className="btn-view-more" onClick={() => navigate('/repair-services')}>Xem Thêm </span>
 					</div>
 				</div>
-				<div className='service maintan-service col-lg-4' style={{backgroundImage: `url(${ServiceImage})`}}>
+				<div className='service maintan-service col-lg-4' style={{ backgroundImage: `url(${ServiceImage})` }}>
 					<div className='service-title'>
 						Dịch vụ bảo trì
 					</div>
 					<div className='service-content'>
-						Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit. Vestibulum nec odios Suspe
-						ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit.
+						Sửa tủ lạnh chuyên nghiệp, uy tín, giá rẻ. Điện lạnh HỢP NHẤT nhận sửa chữa bảo trì tất cả các hãng tủ lạnh, máy lạnh, bảo hành tận nhà tại Tp HCM.
 					</div>
 					<div className='service-view-more'>
-						<span className="btn-view-more">Xem Thêm </span>
+						<span className="btn-view-more" onClick={() => navigate('/maintenance')}>Xem Thêm </span>
 					</div>
 				</div>
-				<div className='service construction-service col-lg-4' style={{backgroundImage: `url(${ServiceImage})`}}>
+				<div className='service construction-service col-lg-4' style={{ backgroundImage: `url(${ServiceImage})` }}>
 					<div className='service-title'>
 						Dich vụ công trình
 					</div>
 					<div className='service-content'>
-						Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit. Vestibulum nec odios Suspe
-						ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion elit.
+						Bạn đang cần dịch vụ di dời máy lạnh từ nơi này sang nơi khác? Điện lạnh HỢP NHẤT sẵn sàng phục vụ tận nhà tại Tp HCM, bất kể 24/7, có mặt ngay sau 30 phút
 					</div>
 					<div className='service-view-more'>
 						<span className="btn-view-more">Xem Thêm </span>

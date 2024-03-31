@@ -18,6 +18,7 @@
         color: black;
         font-size: 17px;
         padding: 20px 20px;
+
         @media screen and (max-width: 1000px) {
             gap: 80px;
             font-size: 40px;
@@ -29,6 +30,7 @@
             color: black;
             font-weight: bold;
             font-size: 20px;
+
             @media screen and (max-width: 1000px) {
                 font-size: 40px;
             }
@@ -57,6 +59,7 @@
             border-bottom: 1px solid #164863;
             margin: 0 20px 0 0;
             padding: 5px;
+
             @media screen and (max-width: 1000px) {
                 margin: 0 20px 0 20px;
             }
@@ -64,6 +67,7 @@
             svg {
                 color: gray;
                 font-size: 15px;
+
                 @media screen and (max-width: 1000px) {
                     gap: 60px;
                     font-size: 30px;
@@ -98,10 +102,122 @@
             flex-direction: column;
             gap: 10px;
         }
+
+        .icon-contact {
+            width: 100%;
+
+            ul {
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    justify-content: start;
+
+                    @media screen and (max-width:1000px) {
+                        justify-content: center;
+                    }
+
+                    a {
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #fff;
+                        font-size: 1rem;
+                        border-radius: 50%;
+                        position: relative;
+                        overflow: hidden;
+                        border: 3px solid #fff;
+                        z-index: 1;
+
+                        @media screen and (max-width:1000px) {
+                            width: 100px;
+                            height: 100px;
+                            font-size: 50px;
+                        }
+
+                        .icon {
+                            position: relative;
+                            color: #262626;
+                            transition: .5s;
+                            z-index: 3;
+                        }
+
+                        &:hover {
+                            .icon {
+                                color: #fff;
+                                transform: rotateY(360deg);
+                            }
+
+                            &:before {
+                                top: 0;
+                            }
+                        }
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: #f00;
+                            transition: .5s;
+                            z-index: 2;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        a {
+                            &:before {
+                                background: #3b5999;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        a {
+                            &:before {
+                                background: #55acee;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        a {
+                            &:before {
+                                background: #0077b5;
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        a {
+                            &:before {
+                                background: #dd4b39;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     .design-infor-container {
         width: 100%;
+        height: 50px;
         background-color: $background-colo-footer-disign-infor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

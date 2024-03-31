@@ -12,9 +12,9 @@
         justify-content: center;
         width: 100%;
         padding-top: 150px;
-        background-position: 50%;
+        background-position: 50% 70%;
 
-        @mixin BannerConttent($fonsize-c1-r1, $fonsize-c1-r2, $fonsize-c2, $fonsize-c2-icon, $wrapper-gap) {
+        @mixin BannerConttent($fonsize-c1-r1, $fonsize-c1-r2, $fonsize-c2, $fonsize-c2-icon, $wrapper-gap, $icon-width) {
             .banner-content {
                 width: 80%;
                 max-width: 1200px;
@@ -45,7 +45,7 @@
                 .content-2 {
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 30px;
                     color: white;
                     background-color: #00ffff9e;
                     padding: 40px;
@@ -53,22 +53,22 @@
 
                     .content-2-row {
                         display: flex;
-                        align-items: start;
+                        align-items: end;
                         gap: 10px;
 
                         .icon {
+                            width: $icon-width;
                             font-size: $fonsize-c2-icon;
-                            padding-top: 8px;
                         }
                     }
                 }
             }
         }
 
-        @include BannerConttent(68px, 20px, 20px, 28px, 0);
+        @include BannerConttent(68px, 20px, 25px, 30px, 0, 50px);
 
         @media screen and (max-width:1000px) {
-            @include BannerConttent(90px, 45px, 45px, 60px, 100px);
+            @include BannerConttent(90px, 45px, 45px, 60px, 100px, 100px);
         }
     }
 
@@ -87,11 +87,17 @@
             line-height: 1.8em;
         }
 
+        .left-content {
+            padding-right: 20px;
+        }
+
         .right-content {
             display: flex;
             flex-direction: column;
             gap: 20px;
             justify-content: start;
+            padding-left: 20px;
+
 
             .right-content-row {
 
@@ -105,6 +111,14 @@
 
             .content-title {
                 font-size: 60px;
+            }
+
+            .left-content {
+                padding: 0;
+            }
+
+            .right-content {
+                padding: 0;
             }
 
         }
