@@ -267,7 +267,7 @@ const Index = () => {
                         Đặng Văn Hợp
                      </div>
                      <div className='content'>
-                        Trưởng phòng HOPNHAT
+                        Trưởng phòng HỢP NHẤT
                      </div>
                      <div className='icon-contact'>
                         <ul className='col-12'>
@@ -293,7 +293,7 @@ const Index = () => {
                         Đặng Văn C
                      </div>
                      <div className='content'>
-                        Phó phòng HOPNHAT
+                        Phó phòng HỢP NHẤT
                      </div>
                      <div className='icon-contact'>
                         <ul className='col-12' >
@@ -318,7 +318,7 @@ const Index = () => {
                         Đặng Văn B
                      </div>
                      <div className='content'>
-                        Nhân viên HOPNHAT
+                        Nhân viên HỢP NHẤT
                      </div>
                      <div className='icon-contact'>
                         <ul className='col-12'>

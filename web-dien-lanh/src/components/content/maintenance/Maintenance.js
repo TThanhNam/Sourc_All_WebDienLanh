@@ -20,7 +20,7 @@ const Maintenance = () => {
          <div className="card-container col-lg-12">
             {postData.map(post => (
                <div key={post.id} className="card col-12 col-lg-5" style={{}} onClick={() => navigate(post.link)}>
-                  {post.imgUrl && <img src={post.imgUrl} alt={`Image ${post.id}`} />}
+                  {post.imgUrl && <img className='image' src={post.imgUrl} alt={`Image ${post.id}`} />}
                   <h3>{post.title}</h3>
                   <p className='content'>{post.content}</p>
                </div>

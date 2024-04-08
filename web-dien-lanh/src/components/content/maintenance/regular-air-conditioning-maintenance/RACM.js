@@ -9,7 +9,7 @@ const RACM = () => {
       <div className="regular-air-conditioning-maintenance-container col-lg-12 wrapper-content">
          <br />
          <br />
-         <div className='title'>DỊCH VỤ VỆ SINH MÁY GIẶT HOPNHAT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</div>
+         <div className='title'>DỊCH VỤ VỆ SINH MÁY GIẶT HỢP NHẤT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</div>
          <div className='content' style={{ padding: '0' }}>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</div >
          <hr />
          <center>

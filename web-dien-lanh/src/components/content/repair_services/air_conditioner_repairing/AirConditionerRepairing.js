@@ -39,7 +39,7 @@ const AirConditionerRepairing = () => {
          </div>
          <div className='air-conditioner-content-02'>
             <p className='title'>
-               #Nên chọn dịch vụ điện lạnh HOPNHAT vì:
+               #Nên chọn dịch vụ điện lạnh HỢP NHẤT vì:
             </p>
             <ul className='list-content'>
                <li>Dịch vụ nhanh chóng và tiện lợi</li>
@@ -116,7 +116,7 @@ const AirConditionerRepairing = () => {
          <div className='air-conditioner-content-03'>
             <center>
                <h2>
-                  Bảng giá dịch vụ tại HOPNHAT
+                  Bảng giá dịch vụ tại HỢP NHẤT
                </h2>
                <br />
                <table className='table' style={{ height: '1797px', width: '93.4728%', borderCollapse: 'collapse', borderColor: '#070708' }} border="đen đậm" cellSpacing="không">
@@ -132,7 +132,7 @@ const AirConditionerRepairing = () => {
                         <td style={{ width: '36.4505%', height: '50px' }}><span style={{ color: '#0000ff' }}><strong>&nbsp;VẬT TƯ + CÔNG&nbsp;</strong></span></td>
                      </tr>
                      <tr style={{ height: '50px' }}>
-                        <td style={{ width: '3.97598%', height: '700px' }} rowSpan={14}><span style={{ color: '#0000ff' }}><strong><span style={{ fontSize: '120%' }}>DÀN LẠNH</span></strong></span></td>
+                        <td style={{ width: '3.97598%', height: '700px', textAlign: 'center' }} rowSpan={14}><span style={{ color: '#0000ff' }}><strong><span style={{ fontSize: '120%' }}>DÀN LẠNH</span></strong></span></td>
                         <td style={{ width: '19.4816%', textAlign: 'center', height: '50px' }}><strong>Sửa mất nguồn, chập/hở mạch</strong></td>
                         <td style={{ width: '9.33424%', textAlign: 'center', height: '50px' }}><strong>1 – 2</strong></td>
                         <td style={{ width: '36.4505%', textAlign: 'center', height: '50px' }}><strong>390.000 – 590.000</strong></td>
@@ -203,7 +203,7 @@ const AirConditionerRepairing = () => {
                         <td style={{ width: '36.4505%', textAlign: 'center', height: '50px' }}><strong>450.000 – 650.000</strong></td>
                      </tr>
                      <tr style={{ height: '50px' }}>
-                        <td style={{ width: '3.97598%', height: '600px' }} rowSpan={12}><span style={{ fontSize: '130%', color: '#0000ff' }}><strong>DÀN</strong> NÓNG</span></td>
+                        <td style={{ width: '3.97598%', height: '600px', textAlign: 'center' }} rowSpan={12}><span style={{ fontSize: '130%', color: '#0000ff' }}><strong>DÀN NÓNG</strong></span></td>
                         <td style={{ width: '19.4816%', textAlign: 'center', height: '50px' }}><strong>Sửa board dàn nóng (inverter)</strong></td>
                         <td style={{ width: '9.33424%', textAlign: 'center', height: '50px' }}><strong>1 – 2</strong></td>
                         <td style={{ width: '36.4505%', textAlign: 'center', height: '50px' }}><strong>750.000 – 950.000</strong></td>

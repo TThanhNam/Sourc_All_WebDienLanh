@@ -26,7 +26,7 @@ const RepairServices = () => {
   return (
     <div className='wrapper-content'>
       <h4 className='title' style={styles.h4Style}>Dịch vụ sửa chữa</h4>
-      <div className="card-container">
+      <div className="card-container row">
         {postData.map(post => (
           <div key={post.id} className="card col-12 col-lg-3" style={{}} onClick={() => navigate(post.link)}>
             {post.imgUrl && <img src={post.imgUrl} alt={`Image ${post.id}`} />}
