@@ -12,7 +12,7 @@ const WashingMachineRepairService = () => {
                     Dịch vụ sửa chữa máy giặt tại nhà giá rẻ-chất lượng cao
                 </div>
                 <div className='content' style={{ padding: '0' }}>
-                    Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}
+                    Sửa máy giặt khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}
                 </div>
                 <hr />
                 <br />
