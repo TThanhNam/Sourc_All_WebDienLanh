@@ -1,8 +1,8 @@
 import React from 'react';
 import './Maintenance.scss';
 import { useNavigate } from 'react-router-dom'
-import img1 from '../../../images/anhdv_vesinhmaylanh.jpg'
-import img2 from '../../../images/anhdv_vesinhmaygiat.jpg'
+import img1 from '../../../images/main-page-dv-bao-tri-may-giat.jpg'
+import img2 from '../../../images/main-page-dv-bao-tri-may-lanh.jpg'
 const styles = {
    h4Style: {
       display: 'flex',

@@ -1,346 +1,365 @@
 .about-us-conatiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-
-    .banner-wrapper {
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-top: 150px;
-        background-position: 50% 70%;
-
-        @mixin BannerConttent($fonsize-c1-r1, $fonsize-c1-r2, $fonsize-c2, $fonsize-c2-icon, $wrapper-gap, $icon-width) {
-            .banner-content {
-                width: 80%;
-                max-width: 1200px;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: start;
-                gap: $wrapper-gap;
-
-                .content-1 {
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    padding-right: 20px;
-
-                    .content-1-row-1 {
-                        font-weight: 800;
-                        text-transform: uppercase;
-                        font-size: $fonsize-c1-r1;
-                        line-height: 1.4em;
-                    }
-
-                    .content-1-row-2 {
-                        font-size: $fonsize-c1-r2;
-                    }
-                }
-
-                .content-2 {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-                    color: white;
-                    background-color: #00ffff9e;
-                    padding: 40px;
-                    font-size: $fonsize-c2;
-
-                    .content-2-row {
-                        display: flex;
-                        align-items: end;
-                        gap: 10px;
-
-                        .icon {
-                            width: $icon-width;
-                            font-size: $fonsize-c2-icon;
-                        }
-                    }
-                }
-            }
-        }
-
-        @include BannerConttent(68px, 20px, 25px, 30px, 0, 50px);
-
-        @media screen and (max-width:1000px) {
-            @include BannerConttent(90px, 45px, 45px, 60px, 100px, 100px);
-        }
-    }
-
-    .our-story-wrapper {
-        width: 80%;
-        max-width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        font-size: 20px;
-
-        .content-title {
-            font-weight: 800;
-            font-size: 24px;
-            color: #f25b3a !important;
-            line-height: 1.8em;
-        }
-
-        .left-content {
-            padding-right: 20px;
-        }
-
-        .right-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            justify-content: start;
-            padding-left: 20px;
-
-
-            .right-content-row {
-
-                .right-content-content {}
-            }
-        }
-
-        @media screen and (max-width:1000px) {
-            font-size: 40px;
-            gap: 20px;
-
-            .content-title {
-                font-size: 60px;
-            }
-
-            .left-content {
-                padding: 0;
-            }
-
-            .right-content {
-                padding: 0;
-            }
-
-        }
-
-
-    }
-
-    .achievement {
-        display: flex;
-        justify-content: center;
-        padding: 50px 0;
-        color: white;
-        margin-top: 30px;
-
-        .achievement-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   width: 100%;
+   
+   .banner-intro-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+      .banner-intro {
+         width: 81%;
+         margin-top: 40px;
+         max-width: 1300px;
+         
+         @media screen and (max-width: 1000px) {
+            width: 86%;
+            margin-top: 40px;
+         }
+      }
+   }
+   
+   .banner-wrapper {
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-top: 150px;
+      background-position: 50% 70%;
+      
+      @mixin BannerConttent($fonsize-c1-r1, $fonsize-c1-r2, $fonsize-c2, $fonsize-c2-icon, $wrapper-gap, $icon-width) {
+         .banner-content {
+            width: 80%;
+            max-width: 1200px;
             display: flex;
             flex-wrap: wrap;
-
-            .achievement-content-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-
-                .achievement-content-icon {
-                    font-size: 60px;
-                    text-align: end;
-                }
-
-                .achievement-content-detail {
-                    font-weight: 600;
-                    color: black !important;
-                    text-align: start;
-
-                    .achievement-content-row-1 {
-                        font-size: 25px;
-                        font-weight: 700;
-                    }
-
-                    .achievement-content-row-2 {}
-
-                }
-
-                @media screen and (max-width:1000px) {
-                    .achievement-content-icon {
-                        font-size: 150px;
-                        text-align: center;
-                    }
-
-                    .achievement-content-row-1 {
-                        font-size: 70px !important;
-                    }
-
-                    .achievement-content-row-2 {
-                        font-size: 40px;
-                    }
-
-
-                }
+            align-items: start;
+            gap: $wrapper-gap;
+            
+            .content-1 {
+               color: white;
+               display: flex;
+               flex-direction: column;
+               justify-content: start;
+               padding-right: 20px;
+               
+               .content-1-row-1 {
+                  font-weight: 800;
+                  text-transform: uppercase;
+                  font-size: $fonsize-c1-r1;
+                  line-height: 1.4em;
+               }
+               
+               .content-1-row-2 {
+                  font-size: $fonsize-c1-r2;
+               }
             }
-        }
-    }
-
-    .what-we-do {
-        width: 80%;
-        max-width: 1200px;
-
-        .wrapper {
-            background-color: #efefef;
-            padding-top: 30px !important;
-            padding-right: 50px !important;
-            padding-bottom: 30px !important;
-            padding-left: 50px !important;
-
-            .what-we-do-content {
-                line-height: 1.7em;
-                font-weight: 500;
-
-                .row-1 {
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    letter-spacing: 0.5px;
-                    line-height: 1.7em;
-                    padding-bottom: 15px;
-
-                }
-
-                .row-2 {
-                    font-weight: 800;
-                    font-size: 24px;
-                    padding-bottom: 15px;
-                }
-
-                @media screen and (max-width:1000px) {
-                    .row-1 {
-                        font-size: 45px
-                    }
-
-                    .row-2 {
-                        font-size: 50px;
-                        line-height: 60px;
-                    }
-
-                }
+            
+            .content-2 {
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+               color: white;
+               background-color: #00ffff9e;
+               padding: 40px;
+               font-size: $fonsize-c2;
+               
+               .content-2-row {
+                  display: flex;
+                  align-items: end;
+                  gap: 10px;
+                  
+                  .icon {
+                     width: $icon-width;
+                     font-size: $fonsize-c2-icon;
+                  }
+               }
             }
-        }
-    }
-
-    .my-service-container {
-        margin: 60px 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        max-width: 1200px;
-
-        .service {
-            background-size: initial;
-            background-position: left top;
-            background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/Rectangle.png);
-            padding-top: 24px !important;
-            padding-left: 24px !important;
-            background-repeat: no-repeat;
-            padding: 0 20px;
-        }
-
-        .service-title {
-            font-weight: 800 !important;
-            text-transform: uppercase !important;
-            font-size: 25px !important;
-            letter-spacing: 0.5px !important;
-            line-height: 1.7em !important;
-        }
-
-        .service-content {
-            line-height: 2em;
-            padding-bottom: 20px;
-            font-size: 20;
-        }
-
-        .service-view-more {
+         }
+      }
+      
+      @include BannerConttent(68px, 20px, 25px, 30px, 0, 50px);
+      
+      @media screen and (max-width: 1000px) {
+         @include BannerConttent(90px, 45px, 45px, 60px, 100px, 100px);
+      }
+   }
+   
+   .our-story-wrapper {
+      width: 80%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      font-size: 20px;
+      
+      .content-title {
+         font-weight: 800;
+         font-size: 24px;
+         color: #f25b3a !important;
+         line-height: 1.8em;
+      }
+      
+      .left-content {
+         padding-right: 20px;
+      }
+      
+      .right-content {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         justify-content: start;
+         padding-left: 20px;
+         
+         
+         .right-content-row {
+            
+            .right-content-content {
+            }
+         }
+      }
+      
+      @media screen and (max-width: 1000px) {
+         font-size: 40px;
+         gap: 20px;
+         
+         .content-title {
+            font-size: 60px;
+         }
+         
+         .left-content {
+            padding: 0;
+         }
+         
+         .right-content {
+            padding: 0;
+         }
+         
+      }
+      
+      
+   }
+   
+   .achievement {
+      display: flex;
+      justify-content: center;
+      padding: 50px 0;
+      color: white;
+      margin-top: 30px;
+      
+      .achievement-content {
+         display: flex;
+         flex-wrap: wrap;
+         
+         .achievement-content-wrapper {
             display: flex;
-            justify-content: end;
-            color: red;
-
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+            .achievement-content-icon {
+               font-size: 60px;
+               text-align: end;
+            }
+            
+            .achievement-content-detail {
+               font-weight: 600;
+               color: black !important;
+               text-align: start;
+               
+               .achievement-content-row-1 {
+                  font-size: 25px;
+                  font-weight: 700;
+               }
+               
+               .achievement-content-row-2 {
+               }
+               
+            }
+            
+            @media screen and (max-width: 1000px) {
+               .achievement-content-icon {
+                  font-size: 150px;
+                  text-align: center;
+               }
+               
+               .achievement-content-row-1 {
+                  font-size: 70px !important;
+               }
+               
+               .achievement-content-row-2 {
+                  font-size: 40px;
+               }
+               
+               
+            }
+         }
+      }
+   }
+   
+   .what-we-do {
+      width: 80%;
+      max-width: 1200px;
+      
+      .wrapper {
+         background-color: #efefef;
+         padding-top: 30px !important;
+         padding-right: 50px !important;
+         padding-bottom: 30px !important;
+         padding-left: 50px !important;
+         
+         .what-we-do-content {
+            line-height: 1.7em;
+            font-weight: 500;
+            
+            .row-1 {
+               font-weight: 800;
+               text-transform: uppercase;
+               font-size: 16px;
+               letter-spacing: 0.5px;
+               line-height: 1.7em;
+               padding-bottom: 15px;
+               
+            }
+            
+            .row-2 {
+               font-weight: 800;
+               font-size: 24px;
+               padding-bottom: 15px;
+            }
+            
+            @media screen and (max-width: 1000px) {
+               .row-1 {
+                  font-size: 45px
+               }
+               
+               .row-2 {
+                  font-size: 50px;
+                  line-height: 60px;
+               }
+               
+            }
+         }
+      }
+   }
+   
+   .my-service-container {
+      margin: 60px 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      max-width: 1200px;
+      
+      .service {
+         background-size: initial;
+         background-position: left top;
+         background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/Rectangle.png);
+         padding-top: 24px !important;
+         padding-left: 24px !important;
+         background-repeat: no-repeat;
+         padding: 0 20px;
+      }
+      
+      .service-title {
+         font-weight: 800 !important;
+         text-transform: uppercase !important;
+         font-size: 25px !important;
+         letter-spacing: 0.5px !important;
+         line-height: 1.7em !important;
+      }
+      
+      .service-content {
+         line-height: 2em;
+         padding-bottom: 20px;
+         font-size: 20;
+      }
+      
+      .service-view-more {
+         display: flex;
+         justify-content: end;
+         color: red;
+         
+         .btn-view-more {
+            cursor: pointer;
+            position: relative;
+            padding: 10px 20px;
+            background: white;
+            font-size: 18px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all 1s;
+            
+            &:after,
+            &:before {
+               content: " ";
+               width: 10px;
+               height: 10px;
+               position: absolute;
+               border: 0px solid #fff;
+               transition: all 1s;
+            }
+            
+            &:after {
+               top: -1px;
+               left: -1px;
+               border-top: 5px solid black;
+               border-left: 5px solid black;
+            }
+            
+            &:before {
+               bottom: -1px;
+               right: -1px;
+               border-bottom: 5px solid black;
+               border-right: 5px solid black;
+            }
+            
+            &:hover {
+               border-top-right-radius: 0px;
+               border-bottom-left-radius: 0px;
+               
+               // background:rgba(0,0,0,.5);
+               // color:white;
+               &:before,
+               &:after {
+                  
+                  width: 100%;
+                  height: 100%;
+                  // border-color:white;
+               }
+            }
+         }
+         
+      }
+      
+      @media screen and (max-width: 1000px) {
+         gap: 80px;
+         
+         .service {
+            background-size: 200px;
+            
+         }
+         
+         .service-title {
+            font-size: 50px !important;
+         }
+         
+         .service-content {
+            font-size: 40px !important;
+         }
+         
+         .service-view-more {
+            padding-top: 50px;
+            
             .btn-view-more {
-                cursor: pointer;
-                position: relative;
-                padding: 10px 20px;
-                background: white;
-                font-size: 18px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                transition: all 1s;
-
-                &:after,
-                &:before {
-                    content: " ";
-                    width: 10px;
-                    height: 10px;
-                    position: absolute;
-                    border: 0px solid #fff;
-                    transition: all 1s;
-                }
-
-                &:after {
-                    top: -1px;
-                    left: -1px;
-                    border-top: 5px solid black;
-                    border-left: 5px solid black;
-                }
-
-                &:before {
-                    bottom: -1px;
-                    right: -1px;
-                    border-bottom: 5px solid black;
-                    border-right: 5px solid black;
-                }
-
-                &:hover {
-                    border-top-right-radius: 0px;
-                    border-bottom-left-radius: 0px;
-
-                    // background:rgba(0,0,0,.5);
-                    // color:white;
-                    &:before,
-                    &:after {
-
-                        width: 100%;
-                        height: 100%;
-                        // border-color:white;
-                    }
-                }
+               font-size: 40px;
             }
-
-        }
-
-        @media screen and (max-width:1000px) {
-            gap: 80px;
-
-            .service {
-                background-size: 200px;
-
-            }
-
-            .service-title {
-                font-size: 50px !important;
-            }
-
-            .service-content {
-                font-size: 40px !important;
-            }
-
-            .service-view-more {
-                padding-top: 50px;
-
-                .btn-view-more {
-                    font-size: 40px;
-                }
-            }
-
-        }
-    }
-
+         }
+         
+      }
+   }
+   
 }

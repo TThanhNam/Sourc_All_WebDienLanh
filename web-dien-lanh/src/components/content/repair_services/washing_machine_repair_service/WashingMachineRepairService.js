@@ -1,6 +1,7 @@
 import React from 'react'
 import './WashingMachineRepairService.scss'
 import img1 from '../../../../images/sua-may-giat-01.jpg'
+import {INFO} from "../../../../share/constance";
 const WashingMachineRepairService = () => {
     return (
         <div className='washing-machine-repair-container'>
@@ -11,7 +12,7 @@ const WashingMachineRepairService = () => {
                     Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
                 </div>
                 <div className='content' style={{ padding: '0' }}>
-                    Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
+                    Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}
                 </div>
                 <hr />
                 <br />

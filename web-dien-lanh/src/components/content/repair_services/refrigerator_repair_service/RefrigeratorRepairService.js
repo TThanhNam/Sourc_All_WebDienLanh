@@ -1,6 +1,7 @@
 import React from 'react'
 import './RefrigeratorRepairService.scss'
 import img1 from '../../../../images/sua-chua-tu-lanh-lien-chieu.jpg'
+import {INFO} from "../../../../share/constance";
 
 const RefrigeratorRepairService = () => {
     return (
@@ -11,12 +12,12 @@ const RefrigeratorRepairService = () => {
                 Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
             </div>
             <div className='content' style={{ padding: '0' }}>
-                Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
+                Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}
             </div>
             <hr />
             <br />
             <div style={{ textAlign: 'center' }}>
-                <img src={img1}></img>
+                <img style={{height: "1000px"}} src={img1}></img>
             </div>
             <div>
                 <p className='title'>
@@ -46,15 +47,6 @@ const RefrigeratorRepairService = () => {
                     <li>Mức giá hợp lý và minh bạch, không có phí ẩn</li>
                     <li>Thời gian làm việc 24/24, 7 ngày một tuần</li>
                 </ul>
-            </div>
-            <div>
-                <h2 className='title'>Liên hệ</h2>
-                <p className='content'>-Hotline: 0365443972</p>
-                <p className='content'>-Zalo: 0365443972 (kỹ thuật trưởng)</p>
-                <p className='content'>-Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></p>
-                <p className='content'>-Email: info@hopnhat.com</p>
-                <p className='content'>-Thứ 2 – chủ nhật: 6h-22h</p>
-                <p className='content'>-Địa chỉ: 419/15 Tô Ngọc Vân Tam phú Thủ Đức</p>
             </div>
 
             <h2 className='title'>Giá sửa tủ lạnh tại nhà</h2>

@@ -4,6 +4,7 @@ import { Alert, Form, Input, message } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import backgroundImage from '../../../images/qafSyKvOOOoWkA8EIYe6cC.jpg'
 import axios from 'axios';
+import {INFO} from "../../../share/constance";
 
 const urlConfig = 'https://cors-anywhere.herokuapp.com/'
 const urlFormSubmit = 'https://docs.google.com/forms/d/e/1FAIpQLSea-MzHm7zh0bXw-aJ4kdqfoqvBAq5uulPgQiaQ3E-9wbvX-A/formResponse';
@@ -59,36 +60,15 @@ return (
                         <ul class="list-style">
                             <li>
                                 <span className='icon'><i class="fa-solid fa-map"></i></span>
-                                Số 34/3 Đường số 7, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh
+                                {INFO.ADDRESS}
                             </li>
                             <li>
                                 <span className='icon'><i class="fa-solid fa-phone"></i></span>
-                                0355034827
+                                {INFO.PHONE_NUMBER}
                             </li>
                             <li>
                                 <span className='icon'><i class="fa-solid fa-envelope"></i></span>
-                                abc@123.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='address col-12 col-lg-6'>
-                    <div className='address-title'>
-                        Bình Phước
-                    </div>
-                    <div className='address-content'>
-                        <ul class="list-style">
-                            <li>
-                                <span className='icon'><i class="fa-solid fa-map"></i></span>
-                                Số 34/3 Đường số 7, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh
-                            </li>
-                            <li>
-                                <span className='icon'><i class="fa-solid fa-phone"></i></span>
-                                0355034827
-                            </li>
-                            <li>
-                                <span className='icon'><i class="fa-solid fa-envelope"></i></span>
-                                abc@123.com
+                                {INFO.GMAIL}
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import { Row, Col } from 'antd'
+import {INFO} from "../../share/constance";
 const Header = () => {
     return (
         <div className='header-container col-lg-12'>
@@ -13,7 +14,7 @@ const Header = () => {
                     <div className='divider-vertical-with'></div>
                     <div className='phone-infor'>
                         <i className="icon fa-solid fa-phone-volume"></i>
-                        0355034827
+                        {INFO.PHONE_NUMBER}
                     </div>
                 </div>
                 <div className='right-infor col-lg-6'>

@@ -1,13 +1,14 @@
 import React from 'react'
 import cwm_banner from '../../../../images/cwm_banner.jpg'
 import './CWM.scss'
+import {INFO} from "../../../../share/constance";
 const CWM = () => {
    return (
       <div className='cleaning-the-washing-machine-container col-lg-12 wrapper-content'>
          <br />
          <br />
          <div className='title'>DỊCH VỤ VỆ SINH MÁY GIẶT HỢP NHẤT CHUYÊN NGHIỆP – Giữ máy giặt luôn sạch đẹp, hoạt động hiệu quả</div>
-         <div className='content' style={{ padding: '0' }}>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972</div >
+         <div className='content' style={{ padding: '0' }}>Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}</div >
          <hr />
          <center>
             <div className='title'>
@@ -136,16 +137,6 @@ const CWM = () => {
                <li>Dịch vụ linh hoạt</li>
                <li>Cung cấp tư vấn và hỗ trợ cho bạn về cách duy trì và bảo quản máy giặt của mình sau khi dịch vụ được hoàn thành.</li>
                <li>Giá cả hợp lý và minh bạch</li>
-            </ul>
-            <p className='content'><b>Thông tin liên hệ</b></p>
-            <p className='content'>Liên hệ ngay với Hanara để đặt lịch hẹn và trải nghiệm dịch vụ vệ sinh máy giặt chất lượng cao của chúng tôi ngay hôm nay!</p>
-            <ul className='list-content'>
-               <li>Địa chỉ: 419/15 Tô Ngọc Vân Tam phú Thủ Đức</li>
-               <li>Hotline: 0365443972</li>
-               <li>Zalo: 0365443972 (kỹ thuật trưởng)</li>
-               <li>Email: info@hopnhat.com</li>
-               <li>Thứ 2 – chủ nhật: 6h-22h</li>
-               <li>Facebook: <a href="https://www.facebook.com/hop.dang.96930?mibextid=ibOpuV">Hợp Nhất</a></li>
             </ul>
          </div>
       </div>

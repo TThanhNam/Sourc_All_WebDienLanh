@@ -1,6 +1,7 @@
 import React from 'react'
 import './AirConditionerRepairing.scss'
 import bamer01 from '../../../../images/banner-sua-chua-02.jpg'
+import {INFO} from "../../../../share/constance";
 const AirConditionerRepairing = () => {
    return (
       <div className='air-conditioner-repairing-container col-lg-12 wrapper-content'>
@@ -10,7 +11,7 @@ const AirConditionerRepairing = () => {
             Dịch vụ sửa chữa máy lạnh tại nhà giá rẻ-chất lượng cao
          </div>
          <div className='content' style={{ padding: '0' }}>
-            Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: 0365443972
+            Sửa máy lạnh khu vực TP.Hồ Chí Minh- hotline: {INFO.PHONE_NUMBER}
          </div>
          <hr />
          <center>

@@ -1,5 +1,7 @@
 import React from 'react'
-import BannerImage from '../../../images/1CwH9mAibSg2qeIuq0cs4.jpg'
+// import BannerImage from '../../../images/1CwH9mAibSg2qeIuq0cs4.jpg'
+import BannerImage from '../../../images/banner-quang-cao.jpg'
+
 import ServiceImage from '../../../images/Rectangle.png'
 import './Intro.scss'
 import { useNavigate } from "react-router-dom";
@@ -8,49 +10,51 @@ const Intro = () => {
 	const navigate = useNavigate();
 	return (
 		<div className='about-us-conatiner'>
-			<div className='banner-wrapper' style={{ backgroundImage: `url(${BannerImage})` }}>
-				<div className='banner-content'>
-					<div className='content-1 col-12 col-lg-8'>
-						<div className='content-1-row-1'>
-							Về chúng tôi
-						</div>
-						<div className='content-1-row-2'>
-							Cửa hàng điện lạnh hợp nhất chúng tôi trân trọng đem đến quý khách hàng các gói dịch vụ về sửa chữa,
-							bảo trì, dịch vụ lắp đặt thi công các công trình lớn nhỏ nhằm đáp ứng
-							và cung cấp chất lượng dịch vụ tốt nhất cho quý khách.
-						</div>
-					</div>
-					<div className='content-2 col-12 col-lg-4'>
-						<div className='content-2-row'>
-							<i class="icon fa-solid fa-truck-fast"></i>
-							<div>
-								Nhanh chóng
-							</div>
-						</div>
-						<div className='content-2-row'>
-							<i class="icon fa-solid fa-shield"></i>
-							<div>
-								An toàn
-							</div>
-						</div>
-						<div className='content-2-row'>
-							<i class="icon fa-solid fa-piggy-bank"></i>
-							<div>
-								Tiết kiệm
-							</div>
-						</div>
-						<div className='content-2-row'>
-							<i class="icon fa-solid fa-calendar-check"></i>
-							<div>
-								Mọi lúc mọi nơi
-							</div>
-						</div>
-					</div>
-					<div className='content-3'>
-
-					</div>
-				</div>
+			<div className={"banner-intro-container"}>
+				<img className={"banner-intro"} src={BannerImage} loading='lazy'/>
 			</div>
+			{/*<div className='banner-wrapper' style={{ backgroundImage: `url(${BannerImage})` }}>*/}
+			{/*	<div className='banner-content'>*/}
+			{/*		<div className='content-1 col-12 col-lg-8'>*/}
+			{/*			<div className='content-1-row-1'>*/}
+			{/*				Về chúng tôi*/}
+			{/*			</div>*/}
+			{/*			<div className='content-1-row-2'>*/}
+			{/*				Cửa hàng điện lạnh hợp nhất chúng tôi trân trọng đem đến quý khách hàng các gói dịch vụ về sửa chữa,*/}
+			{/*				bảo trì, dịch vụ lắp đặt thi công các công trình lớn nhỏ nhằm đáp ứng*/}
+			{/*				và cung cấp chất lượng dịch vụ tốt nhất cho quý khách.*/}
+			{/*			</div>*/}
+			{/*		</div>*/}
+			{/*		<div className='content-2 col-12 col-lg-4'>*/}
+			{/*			<div className='content-2-row'>*/}
+			{/*				<i class="icon fa-solid fa-truck-fast"></i>*/}
+			{/*				<div>*/}
+			{/*					Nhanh chóng*/}
+			{/*				</div>*/}
+			{/*			</div>*/}
+			{/*			<div className='content-2-row'>*/}
+			{/*				<i class="icon fa-solid fa-shield"></i>*/}
+			{/*				<div>*/}
+			{/*					An toàn*/}
+			{/*				</div>*/}
+			{/*			</div>*/}
+			{/*			<div className='content-2-row'>*/}
+			{/*				<i class="icon fa-solid fa-piggy-bank"></i>*/}
+			{/*				<div>*/}
+			{/*					Tiết kiệm*/}
+			{/*				</div>*/}
+			{/*			</div>*/}
+			{/*			<div className='content-2-row'>*/}
+			{/*				<i class="icon fa-solid fa-calendar-check"></i>*/}
+			{/*				<div>*/}
+			{/*					Mọi lúc mọi nơi*/}
+			{/*				</div>*/}
+			{/*			</div>*/}
+			{/*		</div>*/}
+			{/*		<div className='content-3'>*/}
+			{/*		</div>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
 			<div className='our-story-wrapper'>
 				<div className='left-content col-lg-6'>
 					<div className='content-title'>
