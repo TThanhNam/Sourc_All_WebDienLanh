@@ -389,16 +389,16 @@ $darkhighlight: #fde74c;
 										z-index: 3;
 									}
 
-									&:hover {
-										.icon {
-											color: #fff;
-											transform: rotateY(360deg);
-										}
-
-										&:before {
-											top: 0;
-										}
-									}
+									//&:hover {
+									//	.icon {
+									//		color: #fff;
+									//		transform: rotateY(360deg);
+									//	}
+									//
+									//	&:before {
+									//		top: 0;
+									//	}
+									//}
 
 									&:before {
 										content: "";
@@ -450,13 +450,13 @@ $darkhighlight: #fde74c;
 					}
 				}
 
-				&:hover .placehoder {
-					height: calc(100% - 20px);
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				}
+				//&:hover .placehoder {
+				//	height: calc(100% - 20px);
+				//	display: flex;
+				//	flex-direction: column;
+				//	align-items: center;
+				//	justify-content: center;
+				//}
 			}
 		}
 	}

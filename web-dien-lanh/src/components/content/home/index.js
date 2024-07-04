@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from './banner/Banner.js'
-import { Card } from 'antd';
 import { Link } from 'react-router-dom'
 import './index.scss'
 
@@ -12,9 +11,9 @@ import maintenance01 from '../../../images/main-page-dv-bao-tri-may-lanh.jpg'
 import maintenance02 from '../../../images/main-page-dv-bao-tri-may-giat.jpg'
 import maintenance03 from '../../../images/main-page-dv-bao-tri-tu-lanh.jpg'
 
-import member01 from '../../../images/member01.jpg'
-import member02 from '../../../images/member02.jpg'
-import member03 from '../../../images/member03.jpg'
+import imgIntro01 from '../../../images/member01.jpg'
+import imgIntro02 from '../../../images/member02.jpg'
+import imgIntro03 from '../../../images/member03.jpg'
 
 const repairServiceCardItems = [
    {
@@ -242,100 +241,100 @@ const Index = () => {
             </div>
          </div>
          <div className='main-content'>
-            {/*<div className='our-team col-12'>*/}
-            {/*   <div className='middle-content why-choose-us row-all-team-infor col-12 col-lg-3'>*/}
-            {/*      <center>*/}
-            {/*         <div className='row-1'>*/}
-            {/*            Đội ngũ chuyên nghiệp*/}
-            {/*         </div>*/}
-            {/*         <div className='row-2'>*/}
-            {/*            <span style={{ color: '#427D9D' }}>NHÂN VIÊN</span> CỦA CHÚNG TÔI*/}
-            {/*         </div>*/}
-            {/*         <div className='row-3' style={{ marginTop: '10px' }}>*/}
-            {/*            Phục vụ tận tâm*/}
-            {/*         </div>*/}
-            {/*         <div className='row-3'>*/}
-            {/*            Cam đoan cung cấp dịch vụ chất lượng đáng tin cậy.*/}
-            {/*         </div>*/}
-            {/*      </center>*/}
-            {/*   </div>*/}
-            {/*   <div className='row-member-infor col-12 col-lg-3'>*/}
-            {/*      <img src={member01} loading='lazy'/>*/}
-            {/*      <div className="placehoder">*/}
-            {/*         <div className='title'>*/}
-            {/*            Đặng Đức Hợp*/}
-            {/*         </div>*/}
-            {/*         <div className='content'>*/}
-            {/*            CỦA HÀNG TRƯỞNG*/}
-            {/*         </div>*/}
-            {/*         <div className='icon-contact'>*/}
-            {/*            <ul className='col-12'>*/}
-            {/*               <li className='col-3'>*/}
-            {/*                  <a href="#"><i className="fab fa-facebook-f icon"></i></a>*/}
-            {/*               </li>*/}
-            {/*               <li className='col-3'>*/}
-            {/*                  <a href="#"><i className="fab fa-twitter icon"></i></a>*/}
-            {/*               </li>*/}
-            {/*               <li className='col-3'>*/}
-            {/*                  <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>*/}
-            {/*               <li className='col-3'>*/}
-            {/*                  <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>*/}
-            {/*            </ul>*/}
-            {/*         </div>*/}
-            {/*      </div>*/}
+            <div className='our-team col-12'>
+               <div className='middle-content why-choose-us row-all-team-infor col-12 col-lg-3'>
+                  <center>
+                     <div className='row-1'>
+                        Đội ngũ chuyên nghiệp
+                     </div>
+                     <div className='row-2'>
+                        <span style={{ color: '#427D9D' }}>NHÂN VIÊN</span> CỦA CHÚNG TÔI
+                     </div>
+                     <div className='row-3' style={{ marginTop: '10px' }}>
+                        Phục vụ tận tâm
+                     </div>
+                     <div className='row-3'>
+                        Cam đoan cung cấp dịch vụ chất lượng đáng tin cậy.
+                     </div>
+                  </center>
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={imgIntro01} loading='lazy'/>
+                  <div className="placehoder">
+                     <div className='title'>
+                        Đặng Đức Hợp
+                     </div>
+                     <div className='content'>
+                        CỦA HÀNG TRƯỞNG
+                     </div>
+                     <div className='icon-contact'>
+                        <ul className='col-12'>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
 
-            {/*   </div>*/}
-            {/*   /!*<div className='row-member-infor col-12 col-lg-3'>*!/*/}
-            {/*   /!*   <img src={member02} loading='lazy'/>*!/*/}
-            {/*   /!*   <div className="placehoder">*!/*/}
-            {/*   /!*      <div className='title'>*!/*/}
-            {/*   /!*         TRẦN VĂN LONG*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*      <div className='content'>*!/*/}
-            {/*   /!*         NHÂN VIÊN SỬA CHỮA*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*      <div className='icon-contact'>*!/*/}
-            {/*   /!*         <ul className='col-12' >*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-facebook-f icon"></i></a>*!/*/}
-            {/*   /!*            </li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-twitter icon"></i></a>*!/*/}
-            {/*   /!*            </li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>*!/*/}
-            {/*   /!*         </ul>*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*   </div>*!/*/}
-            {/*   /!*</div>*!/*/}
-            {/*   /!*<div className='row-member-infor col-12 col-lg-3'>*!/*/}
-            {/*   /!*   <img src={member03} loading='lazy'/>*!/*/}
-            {/*   /!*   <div className="placehoder">*!/*/}
-            {/*   /!*      <div className='title'>*!/*/}
-            {/*   /!*         Đặng Văn B*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*      <div className='content'>*!/*/}
-            {/*   /!*         NHÂN VIÊN BẢO TRÌ*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*      <div className='icon-contact'>*!/*/}
-            {/*   /!*         <ul className='col-12'>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-facebook-f icon"></i></a>*!/*/}
-            {/*   /!*            </li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-twitter icon"></i></a>*!/*/}
-            {/*   /!*            </li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>*!/*/}
-            {/*   /!*            <li className='col-3'>*!/*/}
-            {/*   /!*               <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>*!/*/}
-            {/*   /!*         </ul>*!/*/}
-            {/*   /!*      </div>*!/*/}
-            {/*   /!*   </div>*!/*/}
-            {/*   /!*</div>*!/*/}
-            {/*</div>*/}
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={imgIntro02} loading='lazy'/>
+                  <div className="placehoder">
+                     <div className='title'>
+                        TRẦN VĂN LONG
+                     </div>
+                     <div className='content'>
+                        NHÂN VIÊN SỬA CHỮA
+                     </div>
+                     <div className='icon-contact'>
+                        <ul className='col-12' >
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div className='row-member-infor col-12 col-lg-3'>
+                  <img src={imgIntro03} loading='lazy'/>
+                  <div className="placehoder">
+                     <div className='title'>
+                        Đặng Văn B
+                     </div>
+                     <div className='content'>
+                        NHÂN VIÊN BẢO TRÌ
+                     </div>
+                     <div className='icon-contact'>
+                        <ul className='col-12'>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-facebook-f icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-twitter icon"></i></a>
+                           </li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-linkedin-in icon"></i></a></li>
+                           <li className='col-3'>
+                              <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
 
       </div>
