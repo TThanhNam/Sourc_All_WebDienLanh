@@ -61,22 +61,22 @@ const RefrigeratorRepairService = () => {
                         <tr style={{ height: '50px' }}>
                             <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &lt; 220 lít</td>
                             <td style={{ height: '50px' }}>Bộ</td>
-                            <td style={{ height: '50px' }}>700.000đ – 1.300.000đ</td>
+                            <td style={{ height: '50px' }}>500.000đ – 700.000đ</td>
                         </tr>
                         <tr style={{ height: '50px' }}>
                             <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh &gt; 220 lít</td>
                             <td style={{ height: '50px' }}>Bộ</td>
-                            <td style={{ height: '50px' }}>1.500.000đ – 1.900.000đ</td>
+                            <td style={{ height: '50px' }}>700.000đ – 1.000.000đ</td>
                         </tr>
                         <tr style={{ height: '50px' }}>
                             <td style={{ height: '50px' }}>Sửa&nbsp;board&nbsp;tủ lạnh&nbsp;Inverter</td>
                             <td style={{ height: '50px' }}>Bộ</td>
-                            <td style={{ height: '50px' }}>2.100.000đ – 2.500.000đ</td>
+                            <td style={{ height: '50px' }}>700.000đ – 1.500.000đ</td>
                         </tr>
                         <tr style={{ height: '50px' }}>
-                            <td style={{ height: '50px' }}>Hàn dây đồng và nạp gas&nbsp;120 – 140 lít</td>
+                            <td style={{ height: '50px' }}>Hàn xì và nạp ga</td>
                             <td style={{ height: '50px' }}>Bộ</td>
-                            <td style={{ height: '50px' }}>850.000đ – 1.000.000đ</td>
+                            <td style={{ height: '50px' }}>1.000.000đ – 1.800.000đ</td>
                         </tr>
                     </tbody>
                 </table>

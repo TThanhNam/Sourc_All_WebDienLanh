@@ -17,6 +17,8 @@ export const URL = {
     FACEBOOK: "https://www.facebook.com/hop.dang.96930",
     ZALO: "https://zalo.me/0365443972",
     GMAIL: "https://mail.google.com/mail/u/0/?hl=vi#search/Danghop505%40gmail.com?compose=new",
+    URL_CONFIG_SEND_GG_FORM: 'https://cors-anywhere.herokuapp.com/',
+    URL_FORM_SUBMIT: 'https://docs.google.com/forms/d/e/1FAIpQLSea-MzHm7zh0bXw-aJ4kdqfoqvBAq5uulPgQiaQ3E-9wbvX-A/formResponse',
 }
 
 export const INFO = {
@@ -24,3 +26,4 @@ export const INFO = {
     PHONE_NUMBER: "0365443972",
     ADDRESS: "Số 34/3 Đường số 7, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh"
 }
+

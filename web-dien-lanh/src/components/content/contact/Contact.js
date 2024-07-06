@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import './Contact.scss'
-import { Alert, Form, Input, message } from 'antd';
+import { message } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
-import backgroundImage from '../../../images/qafSyKvOOOoWkA8EIYe6cC.jpg'
 import axios from 'axios';
-import {INFO} from "../../../share/constance";
-
-const urlConfig = 'https://cors-anywhere.herokuapp.com/'
-const urlFormSubmit = 'https://docs.google.com/forms/d/e/1FAIpQLSea-MzHm7zh0bXw-aJ4kdqfoqvBAq5uulPgQiaQ3E-9wbvX-A/formResponse';
+import {INFO, URL} from "../../../share/constance";
 
 const Contact = () => {
     const [userName, setUserName] = useState('');
@@ -24,7 +20,7 @@ const Contact = () => {
         Form.append("entry.116376776", contentSupport)
 
         await axios({
-            url: `${urlFormSubmit}`,
+            url: `${URL.URL_FORM_SUBMIT}`,
             method: 'post',
             data: Form,
         }).catch(err => {

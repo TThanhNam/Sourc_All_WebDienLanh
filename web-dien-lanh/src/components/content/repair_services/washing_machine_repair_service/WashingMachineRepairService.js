@@ -1,6 +1,7 @@
 import React from 'react'
 import './WashingMachineRepairService.scss'
 import img1 from '../../../../images/sua-may-giat-01.jpg'
+import img2 from '../../../../images/sua-may-giat-02.jpg'
 import {INFO} from "../../../../share/constance";
 const WashingMachineRepairService = () => {
     return (
@@ -18,13 +19,21 @@ const WashingMachineRepairService = () => {
                 <br />
             </div>
             <div>
-                <center>
-                    <img src={img1}>
-                    </img>
+                <center style={{display: "flex", justifyContent: "space-around"}}>
+                    <div>
+                        <img style={{width: "100%", height: "640px"}} src={img1}>
+                        </img>
+                    </div>
+                    <div>
+                        <img style={{width: "100%", height: "640px"}} src={img2}>
+                        </img>
+                    </div>
+
                 </center>
             </div>
-            <br />
-            <br />
+            <br/>
+            <br/>
+            <br/>
             <div className='content'>
                 Máy giặt là thiết bị không thể thiếu trong cuộc sống hàng ngày,
                 giúp tiết kiệm thời gian và công sức. Sửa chữa định kỳ là cần thiết để duy trì hiệu suất

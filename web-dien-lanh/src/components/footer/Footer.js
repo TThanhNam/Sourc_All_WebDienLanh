@@ -112,9 +112,12 @@ const Footer = () => {
                 </a>
               </li>
               <li className='col-3'>
-                <a><i className="fab fa-linkedin-in icon"></i></a></li>
+                <a href={`tel:${INFO.PHONE_NUMBER}`}>
+                  <i className="fa-solid fa-phone icon"></i>
+                </a>
+              </li>
               <li className='col-3'>
-                <a href={URL.GMAIL}><i className="fab fa-google-plus-g icon"></i></a></li>
+                <a href={`mailto:${INFO.GMAIL}`}><i className="fab fa-google-plus-g icon"></i></a></li>
             </ul>
           </div>
         </div>
