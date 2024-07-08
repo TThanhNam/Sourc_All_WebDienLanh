@@ -38,7 +38,7 @@ const CWM = () => {
                <li><b>Mất hiệu suất giặt:</b> Máy giặt bị ô nhiễm có thể không hoạt động hiệu quả như mong đợi. Nước giặt có thể không được phân phối đều, hoặc quá trình giặt có thể không diễn ra đúng cách, dẫn đến việc quần áo của bạn sẽ không được vệ sinh kỹ lưỡng.</li>
                <li><b>Tác động đến sức khỏe:</b> Mùi hôi và vi khuẩn có thể gây ra các vấn đề về sức khỏe như dị ứng và kích ứng da, đặc biệt đối với những người có da nhạy cảm.
                </li>
-               <li>Ngoài ra máy móc sẽ có tuổi thọ nhất định nếu bạn không bảo trì, vệ sinh thường xuyên sẽ dẫn đến thiết bị làm việc quá tải có thể gây ra tình trạng hỏng hóc, chập điện hay cháy nổ
+               <li>Ngoài ra máy móc sẽ có tuổi thọ nhất định nếu bạn không bảo trì, vệ sinh thường xuyên sẽ dẫn đến thiết bị làm việc quá tải có thể gây ra tình trạng hỏng hóc, chập điện hay cháy nổ.
                </li>
             </ul>
          </div>

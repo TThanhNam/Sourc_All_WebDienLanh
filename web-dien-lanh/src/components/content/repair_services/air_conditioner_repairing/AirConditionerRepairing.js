@@ -44,7 +44,7 @@ const AirConditionerRepairing = () => {
             </p>
             <ul className='list-content'>
                <li>Dịch vụ nhanh chóng và tiện lợi</li>
-               <li>Phục vụ 24/24 ( hoạt động cả cuối tuần )</li>
+               <li>Phục vụ 24/7 ( hoạt động cả cuối tuần )</li>
                <li>Kỹ thuật viên có kiến thức, trình độ chuyên môn khắc phục tình trạng đơn giản đến phức tạp</li>
                <li>Giá niêm yết công khai</li>
                <li>Cam kết thay lắp linh kiện chính hãng</li>
@@ -54,19 +54,19 @@ const AirConditionerRepairing = () => {
             </ul>
             <br />
             <p className='title'>
-               #Những sự cố thường ở máy lạnh có thể tìm đến dịch vụ sửa chữ:
+               #Những sự cố thường ở máy lạnh có thể tìm đến dịch vụ sửa chữa:
             </p>
             <ul className='list-content'>
                <li>Máy lạnh bị chảy nước</li>
                <li>Máy lạnh hoạt động phát ra âm thanh to</li>
                <li>Cục lạnh (dàn lạnh), Cục nòng (dàn nóng) phát ra tiếng ồn</li>
                <li>Máy lạnh không lạnh dù đã điều chỉnh đúng chế độ</li>
-               <li>Máy lạnh không hoạt động bất kì chức năng gì.</li>
-               <li>Cục nóng, cục lạnh không hoạt động, không quạt..</li>
+               <li>Máy lạnh không hoạt động bất kì chức năng nào.</li>
+               <li>Cục nóng, cục lạnh không hoạt động, không quạt.</li>
                <li>Máy điều hòa bị xì gas.</li>
                <li>Máy điều hòa không nhận tín hiệu điều khiển, báo lỗi bo mạch.</li>
                <li>Block điều hòa không hoạt động</li>
-               <li>Sửa điều hòa quá lạnh so với nhiệt độ điều chỉnh</li>
+               <li>Điều hòa quá lạnh so với nhiệt độ điều chỉnh</li>
                <li>Máy không chảy nước ra ống dẫn nước.</li>
                <li>Máy lạnh rỉ nước trực tiếp.</li>
                <li>Máy lạnh không lạnh, kém lạnh</li>

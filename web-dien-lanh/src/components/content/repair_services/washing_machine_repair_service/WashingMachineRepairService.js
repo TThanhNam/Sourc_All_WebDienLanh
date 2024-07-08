@@ -68,12 +68,12 @@ const WashingMachineRepairService = () => {
                     <li>Sửa máy giặt lỗi xả nước liên tục</li>
                     <li>Sửa máy giặt không vắt</li>
                     <li>Sửa máy giặt báo lỗi màn hình và không chạy</li>
-                    <li>Khi giặt, máy rung lắc mạnh</li>
+                    <li>Máy rung lắc mạnh khi giặt</li>
                     <li>Vệ sinh máy giặt</li>
                 </ul>
             </div>
             <p><strong><span style={{ color: '#000000' }}>
-                <em className='title'>Trung tâm điện lạnh HARANA sửa chữa máy giặt các thương hiệu sau
+                <em className='title'>Điện lạnh hợp nhất sửa chữa máy giặt các thương hiệu sau
                 </em></span></strong></p>
             <table style={{ borderCollapse: 'collapse', width: '100%' }}>
                 <tbody>
@@ -82,11 +82,8 @@ const WashingMachineRepairService = () => {
                             <ul className='list-content'>
                                 <li>Sửa máy giặt lg</li>
                                 <li>Sửa máy giặt toshiba</li>
-                                <li>Sửa máy giặt gần đây</li>
-                                <li>Shợ sửa máy giặt tại nhà</li>
                                 <li>Sửa máy giặt electrolux</li>
-                                <li>Sửa chữa máy giặt electrolux</li>
-                                <li>Sửa máy giặt electrolux tại nhà</li>
+                                <li>Sửa máy giặt electrolux</li>
                                 <li>Sửa máy giặt panasonic</li>
                                 <li><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;sửa máy giặt samsung&quot;}" data-sheets-userformat="{&quot;2&quot;:15233,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:2,&quot;11&quot;:0,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;Lexend&quot;,&quot;16&quot;:9}">sửa máy giặt samsung</span></li>
                             </ul>
@@ -94,8 +91,6 @@ const WashingMachineRepairService = () => {
                         <td style={{ display: 'flex' }}>
                             <ul className='list-content'>
                                 <li>Sửa máy giặt sanyo</li>
-                                <li>Sửa chữa máy giặt electrolux</li>
-                                <li>Sửa máy giặt electrolux tại nhà</li>
                                 <li>Sửa máy giặt aqua</li>
                                 <li>Sửa máy giặt beko</li>
                                 <li>Sửa máy giặt hitachi</li>

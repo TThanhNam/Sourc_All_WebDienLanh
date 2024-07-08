@@ -14,10 +14,10 @@ const Contact = () => {
     const [messageApi, contextHolder] = message.useMessage();
 
     const handleSubmitData = async () => {
-        Form.append("entry.347246686", userName)
-        Form.append("entry.2026061024", phoneNumber)
-        Form.append("entry.1462627938", address)
-        Form.append("entry.116376776", contentSupport)
+        Form.append("entry.1065046570", userName)
+        Form.append("entry.839337160", phoneNumber)
+        Form.append("entry.1166974658", address)
+        Form.append("entry.2005620554", contentSupport)
 
         await axios({
             url: `${URL.URL_FORM_SUBMIT}`,

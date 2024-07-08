@@ -33,7 +33,7 @@ const RACM = () => {
             <p className="title">Nếu bạn không bảo trì, vệ sinh máy lạnh thường xuyên sẽ dẫn đến:</p>
             <ul className="list-content">
                <li>Tăng nguy cơ hỏng thiết bị: Bụi bẩn và mảng vi khuẩn có thể tích tụ trong máy lạnh từ đó làm giảm hiệu suất hoạt động của máy và tăng nguy cơ hỏng hóc hệ thống.</li>
-               <li>Giảm hiệu suất làm lạnh: Khi máy lạnh bị bít kín bởi bụi bẩn, cặn và các tạp chất khác, hiệu suất làm lạnh sẽ giảm</li>
+               <li>Giảm hiệu suất làm lạnh: Khi máy lạnh bị bít kín bởi bụi bẩn, cặn và các tạp chất khác, hiệu suất làm lạnh sẽ giảm.</li>
                <li>Tăng chi phí điện năng: Khi máy quá lâu không được vệ sinh và bị bịt kín bởi bụi bẩn làm thiết bị phải tăng năng suất hoạt động từ đó dẫn đến lượng điện tiêu thụ nhiều hơn.</li>
                <li>Gây hại cho sức khỏe: Máy lạnh không được vệ sinh định kỳ trở thành nơi phát triển của vi khuẩn, nấm mốc và các chất độc hại khác, gây ra các vấn đề về sức khỏe như dị ứng, viêm phổi, hoặc các vấn đề hô hấp khác.</li>
             </ul>
@@ -44,7 +44,7 @@ const RACM = () => {
          <div className="regular-air-conditioning-maintenance-content-03">
             <p className="title"><b>Sau đây là những dấu hiệu bạn cần phải vệ sinh máy lạnh của mình:</b></p>
             <ul className="list-content">
-               <li>Không làm lạnh hiệu quả</li>
+               <li>Làm lạnh không hiệu quả</li>
                <li>Tiếng ồn lớn</li>
                <li>Mùi khó chịu</li>
                <li>Dòng khí không mạnh</li>
@@ -56,7 +56,7 @@ const RACM = () => {
             <img src={visao} style={{ width: '100%' }} />
          </div>
          <p className="content">
-            <i>Với đội ngũ kỹ thuật viên giàu kinh nghiệm và trình độ chuyên môn cao, Hanara cam kết cung cấp dịch vụ bảo trì
+            <i>Với đội ngũ kỹ thuật viên giàu kinh nghiệm và trình độ chuyên môn cao, chúng tôi cam kết cung cấp dịch vụ bảo trì
                máy lạnh tối ưu cho khách hàng của mình. Chúng tôi không chỉ giúp giữ cho máy lạnh hoạt động hiệu quả mà còn
                tăng cường tuổi thọ của máy, giảm thiểu sự cố và sửa chữa.</i>
          </p>

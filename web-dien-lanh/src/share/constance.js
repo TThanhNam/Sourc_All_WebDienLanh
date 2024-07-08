@@ -18,7 +18,7 @@ export const URL = {
     ZALO: "https://zalo.me/0365443972",
     GMAIL: "https://mail.google.com/mail/u/0/?hl=vi#search/Danghop505%40gmail.com?compose=new",
     URL_CONFIG_SEND_GG_FORM: 'https://cors-anywhere.herokuapp.com/',
-    URL_FORM_SUBMIT: 'https://docs.google.com/forms/d/e/1FAIpQLSea-MzHm7zh0bXw-aJ4kdqfoqvBAq5uulPgQiaQ3E-9wbvX-A/formResponse',
+    URL_FORM_SUBMIT: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfo_rHazpO-5uHL3iGOUDuN-0PkuXT9ha6i9KDWON8tqqQjoQ/formResponse',
 }
 
 export const INFO = {

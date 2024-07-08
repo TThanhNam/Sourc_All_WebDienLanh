@@ -69,9 +69,9 @@ const Intro = () => {
 					<div className='left-content-row' style={{ marginBottom: '10px' }}>
 						Đến với cửa hàng điện lạnh HỢP NHẤT khách hàng sẽ được trải nghiệm một sự uy tín, nhanh chóng, chuyên nghiệp hàng đầu.
 						Ngoài việc cung cấp những dịch vụ sửa chữa,
-						vệ sinh cho các cá nhân, hộ gia đình Hanara còn chuyên cung cấp các gói dịch vụ sửa chữa,
+						vệ sinh cho các cá nhân, hộ gia đình, chúng tôi còn chuyên cung cấp các gói dịch vụ sửa chữa,
 						bảo trì cho các đơn vị tổ chức có quy mô như các doanh nghiệp, các trường học, các hệ thống chuỗi nhà hàng,
-						các phòng Gym, quán xá, công trình chung cư… .
+						các phòng Gym, quán xá, công trình chung cư,…
 					</div>
 
 				</div>
@@ -91,7 +91,7 @@ const Intro = () => {
 							Đội Ngũ Nhân Viên
 						</div>
 						<div className='right-content-content'>
-							Chúng tôi có một đội ngũ nhân viên xuất sắc với tay nghề lâu năm, dày dạn kinh nghiệm bên cạnh đó là thái độ phục vụ chuyên nghiệp,
+							Chúng tôi có một đội ngũ nhân viên xuất sắc với tay nghề lâu năm, dày dặn kinh nghiệm bên cạnh đó là thái độ phục vụ chuyên nghiệp,
 							nhanh nhẹn, cẩn thận và tỉ mỉ và được tuyển chọn kỹ lưỡng, mỗi cá nhân kỹ thuật viên đến nhân viên tư vấn luôn tận tình với khách hàng.
 							Mang đến chất lượng dịch vụ tốt nhất làm hài lòng tất cả khách hàng và đối tác.
 						</div>
