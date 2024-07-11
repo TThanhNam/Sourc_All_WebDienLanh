@@ -14,7 +14,7 @@
     .main-content-lg {
         display: flex;
         height: auto;
-        padding: 10px;
+        padding: 5px;
         max-width: 1250px;
         align-items: center;
 
@@ -22,9 +22,12 @@
             display: none;
         }
 
-        .logo {
+        .logo-container {
             display: flex;
             justify-content: center;
+            .logo {
+                height: 80px;
+            }
         }
 
         .nav-content {
@@ -83,12 +86,14 @@
         @media screen and (min-width: 1000px) {
             display: none;
         }
-
-        .logo {
-
+        
+        .logo-container {
             display: flex;
             justify-content: start;
             font-size: 65px;
+            .logo {
+                height: 100px;
+            }
         }
 
         .nav-content {

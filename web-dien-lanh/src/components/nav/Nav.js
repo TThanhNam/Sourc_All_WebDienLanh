@@ -5,6 +5,8 @@ import className from 'classnames'
 import { Drawer, Dropdown, Menu } from 'antd';
 import { HomeOutlined, InfoCircleOutlined, ProfileOutlined, SettingOutlined, ToolOutlined } from '@ant-design/icons';
 import { URL } from '../../share/constance';
+import logo from '../../images/logo_01.png'
+
 const HOME_ACT = 'home-page';
 const INTRODUCTION_ACT = 'introduction';
 const REPAIRSERVICE_ACT = 'repair-services';
@@ -147,10 +149,8 @@ const Nav = () => {
    return (
       <div className='nav-container'>
          <div className='main-content-lg col-lg-12'>
-            <div className='logo col-lg-4 active'>
-               <h1>
-                  LOGO HERE
-               </h1>
+            <div className='logo-container col-lg-4 active'>
+               <img className={"logo"} src={logo}></img>
             </div>
             <div className='nav-content col-lg-8'>
                <ul>
@@ -203,8 +203,8 @@ const Nav = () => {
             </div>
          </div>
          <div className='main-content-md col-12'>
-            <div className='logo col-lg-4 active'>
-               LOGO HERE
+            <div className='logo-container col-lg-4 active'>
+               <img className={"logo"} src={logo}></img>
             </div>
             <div className='nav-content col-lg-8'>
                <div className='icon-open-drawer' onClick={() => setOpenDrawer(true)}>
